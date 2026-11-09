@@ -1,0 +1,10 @@
+# Bỏ qua file zip lớn (GitHub chặn file > 100MB)
+*.zip
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.idea/

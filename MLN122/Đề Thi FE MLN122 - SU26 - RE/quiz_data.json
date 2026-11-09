@@ -1,0 +1,1233 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q001.png",
+    "full_img": "Q001.png",
+    "comments": [
+      "phanthebang009: A",
+      "Primo56: A",
+      "donghoa: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 4",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q002.png",
+    "full_img": "Q002.png",
+    "comments": [
+      "Primo56: A",
+      "donghoa: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 4",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."
+  },
+  {
+    "id": 3,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q003.png",
+    "full_img": "Q003.png",
+    "comments": [
+      "Primo56: c",
+      "vtm: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 3",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 3."
+  },
+  {
+    "id": 4,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q004.png",
+    "full_img": "Q004.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 5,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q005.png",
+    "full_img": "Q005.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q006.png",
+    "full_img": "Q006.png",
+    "comments": [
+      "bae_lili: Quy luat gia tri thang dup."
+    ],
+    "vote_summary": "Mặc định A (chưa có bình luận)",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: Mặc định A (chưa có bình luận)."
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q007.png",
+    "full_img": "Q007.png",
+    "comments": [
+      "LyNhatE: A",
+      "Primo56: A",
+      "de190136: a",
+      "LOV Be: b",
+      "SandT: A"
+    ],
+    "vote_summary": "A: 4, B: 1",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4, B: 1."
+  },
+  {
+    "id": 8,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q008.png",
+    "full_img": "Q008.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 9,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q009.png",
+    "full_img": "Q009.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 10,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q010.png",
+    "full_img": "Q010.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 11,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q011.png",
+    "full_img": "Q011.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q012.png",
+    "full_img": "Q012.png",
+    "comments": [
+      "Primo56: B",
+      "vtm: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 13,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q013.png",
+    "full_img": "Q013.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 14,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q014.png",
+    "full_img": "Q014.png",
+    "comments": [
+      "taithptqt123: co ban cua chu nghia tu ban",
+      "SandT: B. Tuyet doi cia chu nghia tu ban",
+      "Ttcoder1302: Dap an la Tuyet doi cia chu nghia tup ban",
+      "de190136: quy luat kinh te tuyet doi cia chi nghia tup ban"
+    ],
+    "vote_summary": "B: 1",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 1."
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q015.png",
+    "full_img": "Q015.png",
+    "comments": [
+      "Primo56: A",
+      "vtm: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 16,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q016.png",
+    "full_img": "Q016.png",
+    "comments": [
+      "Primo56: b",
+      "SandT: B",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q017.png",
+    "full_img": "Q017.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q018.png",
+    "full_img": "Q018.png",
+    "comments": [
+      "Primo56: B",
+      "SandT: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 19,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q019.png",
+    "full_img": "Q019.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q020.png",
+    "full_img": "Q020.png",
+    "comments": [
+      "Primo56: B",
+      "SandT: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q021.png",
+    "full_img": "Q021.png",
+    "comments": [
+      "Primo56: B",
+      "SandT: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 22,
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "B"
+    ],
+    "question_img": "questions/Q022.png",
+    "full_img": "Q022.png",
+    "comments": [
+      "bae_lili: abd",
+      "namnguyen6: AB",
+      "Primo56: AB",
+      "SandT: AB",
+      "dog12904: AC"
+    ],
+    "vote_summary": "ABD: 1 vote, AB: 3 vote, AC: 1 vote",
+    "explanation": "Đáp án chuẩn: A, B. Thống kê thảo luận cộng đồng FuOverflow: ABD: 1 vote, AB: 3 vote, AC: 1 vote."
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q023.png",
+    "full_img": "Q023.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 24,
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "question_img": "questions/Q024.png",
+    "full_img": "Q024.png",
+    "comments": [
+      "Primo56: ABC",
+      "SandT: ABC",
+      "dog12904: ABC"
+    ],
+    "vote_summary": "ABC: 3 vote",
+    "explanation": "Đáp án chuẩn: A, B, C. Thống kê thảo luận cộng đồng FuOverflow: ABC: 3 vote."
+  },
+  {
+    "id": 25,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q025.png",
+    "full_img": "Q025.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 26,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q026.png",
+    "full_img": "Q026.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 27,
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "question_img": "questions/Q027.png",
+    "full_img": "Q027.png",
+    "comments": [
+      "Primo56: ABC",
+      "SandT: abc",
+      "dog12904: ABC"
+    ],
+    "vote_summary": "ABC: 3 vote",
+    "explanation": "Đáp án chuẩn: A, B, C. Thống kê thảo luận cộng đồng FuOverflow: ABC: 3 vote."
+  },
+  {
+    "id": 28,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q028.png",
+    "full_img": "Q028.png",
+    "comments": [
+      "Primo56: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 2",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 2."
+  },
+  {
+    "id": 29,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q029.png",
+    "full_img": "Q029.png",
+    "comments": [
+      "Primo56: A",
+      "de190136: B",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 2, B: 1",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 2, B: 1."
+  },
+  {
+    "id": 30,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q030.png",
+    "full_img": "Q030.png",
+    "comments": [
+      "Primo56: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 2",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 2."
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q031.png",
+    "full_img": "Q031.png",
+    "comments": [
+      "Primo56: A",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 2",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 2."
+  },
+  {
+    "id": 32,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q032.png",
+    "full_img": "Q032.png",
+    "comments": [
+      "Primo56: c",
+      "SandT: c",
+      "minhtu2005: c. xii nhe mn",
+      "hoangneee: c",
+      "afang_no1x: c"
+    ],
+    "vote_summary": "C: 5",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."
+  },
+  {
+    "id": 33,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q033.png",
+    "full_img": "Q033.png",
+    "comments": [
+      "Primo56: B",
+      "de190136: b",
+      "minhtu2005: b",
+      "hoangneee: b",
+      "afang_no1x: a"
+    ],
+    "vote_summary": "A: 1, B: 4",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: A: 1, B: 4."
+  },
+  {
+    "id": 34,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q034.png",
+    "full_img": "Q034.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 35,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q035.png",
+    "full_img": "Q035.png",
+    "comments": [
+      "Primo56: c",
+      "Primo56: c",
+      "hoangneee: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 4",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."
+  },
+  {
+    "id": 36,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D",
+    "question_img": "questions/Q036.png",
+    "full_img": "Q036.png",
+    "comments": [
+      "Primo56: D",
+      "hoangneee: d",
+      "dog12904: D"
+    ],
+    "vote_summary": "D: 3",
+    "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 3."
+  },
+  {
+    "id": 37,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q037.png",
+    "full_img": "Q037.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 38,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q038.png",
+    "full_img": "Q038.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 39,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q039.png",
+    "full_img": "Q039.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 40,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q040.png",
+    "full_img": "Q040.png",
+    "comments": [
+      "Primo56: A",
+      "SandT: a",
+      "hoangneee: a",
+      "ericday: a",
+      "dog12904: D"
+    ],
+    "vote_summary": "A: 4, D: 1",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4, D: 1."
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q041.png",
+    "full_img": "Q041.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q042.png",
+    "full_img": "Q042.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q043.png",
+    "full_img": "Q043.png",
+    "comments": [
+      "Primo56: c",
+      "hoangneee: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 3",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 3."
+  },
+  {
+    "id": 44,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q044.png",
+    "full_img": "Q044.png",
+    "comments": [
+      "Primo56: c",
+      "hoangneee: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 3",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 3."
+  },
+  {
+    "id": 45,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D",
+    "question_img": "questions/Q045.png",
+    "full_img": "Q045.png",
+    "comments": [
+      "Primo56: D",
+      "hoangneee: d",
+      "dog12904: D"
+    ],
+    "vote_summary": "D: 3",
+    "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 3."
+  },
+  {
+    "id": 46,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q046.png",
+    "full_img": "Q046.png",
+    "comments": [
+      "Primo56: c",
+      "hoangneee: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 3",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 3."
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q047.png",
+    "full_img": "Q047.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 48,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q048.png",
+    "full_img": "Q048.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 49,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D",
+    "question_img": "questions/Q049.png",
+    "full_img": "Q049.png",
+    "comments": [
+      "Primo56: D",
+      "hoangneee: d",
+      "dog12904: D"
+    ],
+    "vote_summary": "D: 3",
+    "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 3."
+  },
+  {
+    "id": 50,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C",
+    "question_img": "questions/Q050.png",
+    "full_img": "Q050.png",
+    "comments": [
+      "Primo56: c",
+      "dog12904: c"
+    ],
+    "vote_summary": "C: 2",
+    "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 2."
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q051.png",
+    "full_img": "Q051.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q052.png",
+    "full_img": "Q052.png",
+    "comments": [
+      "Primo56: B",
+      "SandT: B",
+      "phanthebang009: B",
+      "Ttcoder1302: B",
+      "hoangneee: a"
+    ],
+    "vote_summary": "A: 1, B: 4",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: A: 1, B: 4."
+  },
+  {
+    "id": 53,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q053.png",
+    "full_img": "Q053.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  },
+  {
+    "id": 54,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D",
+    "question_img": "questions/Q054.png",
+    "full_img": "Q054.png",
+    "comments": [
+      "Primo56: D",
+      "hoangneee: d",
+      "dog12904: D"
+    ],
+    "vote_summary": "D: 3",
+    "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 3."
+  },
+  {
+    "id": 55,
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "question_img": "questions/Q055.png",
+    "full_img": "Q055.png",
+    "comments": [
+      "Primo56: ACD",
+      "hoangneee: acd",
+      "dog12904: ACD"
+    ],
+    "vote_summary": "ACD: 3 vote",
+    "explanation": "Đáp án chuẩn: A, C, D. Thống kê thảo luận cộng đồng FuOverflow: ACD: 3 vote."
+  },
+  {
+    "id": 56,
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "question_img": "questions/Q056.png",
+    "full_img": "Q056.png",
+    "comments": [
+      "Primo56: ABC",
+      "SandT: abc",
+      "de190136: abc",
+      "phanthebang009: abc",
+      "hoangneee: abd"
+    ],
+    "vote_summary": "ABC: 4 vote, ABD: 1 vote",
+    "explanation": "Đáp án chuẩn: A, B, C. Thống kê thảo luận cộng đồng FuOverflow: ABC: 4 vote, ABD: 1 vote."
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q057.png",
+    "full_img": "Q057.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 58,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q058.png",
+    "full_img": "Q058.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A",
+    "question_img": "questions/Q059.png",
+    "full_img": "Q059.png",
+    "comments": [
+      "Primo56: A",
+      "hoangneee: a",
+      "dog12904: A"
+    ],
+    "vote_summary": "A: 3",
+    "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."
+  },
+  {
+    "id": 60,
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B",
+    "question_img": "questions/Q060.png",
+    "full_img": "Q060.png",
+    "comments": [
+      "Primo56: B",
+      "hoangneee: b",
+      "dog12904: B"
+    ],
+    "vote_summary": "B: 3",
+    "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."
+  }
+]

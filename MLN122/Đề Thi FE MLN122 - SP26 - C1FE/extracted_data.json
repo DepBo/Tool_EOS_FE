@@ -1,0 +1,2338 @@
+[
+  {
+    "id": 1,
+    "filename": "Q001.png",
+    "question_text": "Q1\nLinhvucnghienctiutrongtam cuachinghiatrongthuionglagi?\nA. Linh vuic luu thong\nB.Linhvucsanxuat\nC.Linhvucthue\nD. Linh vuc tien luong",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "DUcanhNguen",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "DUcanhNguen: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "filename": "Q002.png",
+    "question_text": "Q2\nPhuiongthuicsanxuattubanchinghiahinhthanhvathaythechophuiongthucsansanxuat nao?\nA.Phuiongthuicsanxuatphongkien\nB.Phuongthicsanxuatchiemhuunole\nC.Phuongthuicsanxuatcongsannguyenthuy\nD.Phuongthuic sanxuatcongsan chunghia",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "a",
+      "DUcanhNguen",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: a",
+      "DUcanhNguen: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "filename": "Q003.png",
+    "question_text": "Q3\nLy luankinhtechinhtri cua C.Mac va Ph.Angghen duioc codongvataptrung trong tacpham nao?\nA. Tuban\nB.Banthaokinhte-triethoc\nC.Luiocthaophephankhoakinhtechinhtri\nD.TuyenngoncuaDangCongsan",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "DUcanhNguen",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "DUcanhNguen: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "filename": "Q004.png",
+    "question_text": "Q4\nChuicnangnaocuakinhtechinhtri Mac-Leninthehiensuvandungdungcacquyluatkinhtekhachquan\ntrien theo huiong tien bo?\nA. Chuic nang thuc tien\nB.Chuic nang nhanthuic\nC. Chuic nang tu tuiong\nD.Chticnangphuongphapluan",
+    "comment_lines": [
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "nguyenhai18052004",
+      "dieu chinh hanh vi ca nhan va chinh sach gop",
+      "phat trien kinh te - xa hoi => chupc nang thuc",
+      "tién",
+      "DUcanhNguen",
+      "a"
+    ],
+    "formatted_comments": [
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "nguyenhai18052004: dieu chinh hanh vi ca nhan va chinh sach gop phat trien kinh te - xa hoi => chupc nang thuc tién",
+      "DUcanhNguen: a"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "filename": "Q005.png",
+    "question_text": "Q5\nDienvao chotrong dehoanthanhcausau:\"Chinh trikinhtehoctuyet nhienkhongnghien cuiusu sanxuat,\nma nghiencuunhung quan hexahoi giua...trong san xuat, nghien cuu chedoxa hoi cua sanxuat.\nA.Nguoivoinguoi\nB. Con nguoi vdi tien te\nC.Connguoivoixahoi\nD.Nguoivoihanghoa",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "DUcanhNguen",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "DUcanhNguen: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "filename": "Q006.png",
+    "question_text": "Q6\nLaodongtruutuongtaora:\nA.Giatricuahanghoa\nB. Giatrisuidung cuahanghoa\nC. Giatritrao doicuahanghoa",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT 7",
+      "A",
+      "nguyenhai18052004",
+      "lao dong tripu turong tao ra = gia tri cia hang",
+      "hoa"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT 7: A",
+      "nguyenhai18052004: lao dong tripu turong tao ra = gia tri cia hang hoa"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "filename": "Q007.png",
+    "question_text": "Q7\nNhandinhnaosaudayladuing?\nA.Xa hoi loai ngudicangphat trien,sutachbiet vesohuu cang sau sac,hanghoa duioc san xuatra cang\nphong phi.\nB.Xahoi loainguoicangphattrien,sutachbietvesohuucangsausac,hanghoaduiocsanxuatracang\nkhan hiem.\nC.Xahoiloai nguoicangkemphattrien,sutachbietvesdhuucangsausac,hanghoaduocsanxuatra\ncangkemphongphu.\nD.San xuat cang phat trien,sutachbietveso huucang sau sac,hanghoa duioc sanxuatra cangkem phong\nphui.",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "xa hoi phat trien -> tach biet ve so htu cang",
+      "sau sac -> hang hoa durgc san xuat ra cang",
+      "phong phu",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: xa hoi phat trien -> tach biet ve so htu cang sau sac -> hang hoa durgc san xuat ra cang phong phu",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "filename": "Q008.png",
+    "question_text": "Q8\nTrongkinh tehanghoa, canhtranh co tacdung:\nA.Nolamchosanxuatthieutinhnhanvan\nB.Nobuocnguoisanxuatphaithuongxuyennangdong,nhayben\nC.Nolamchosanxuatmangtinhnhanvanhon",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "B",
+      "Aim cuc zang cua FPT ↑",
+      "B",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: B",
+      "Aim cuc zang cua FPT ↑: B",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 5,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "filename": "Q009.png",
+    "question_text": "Q9\nNgoai giatri thigia cacuathitruongconphuthuocvao:\nA.Yeutocanhtranh\nB.Yeutocanhtranh,sicmuacuadongtien.\nC.Yeutocanhtranh,cungcau,sticmuacuadongtien.\nD. Yeutocanhtranh,cungcau,sticmua cuadongtien,giatri",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "filename": "Q010.png",
+    "question_text": "Q10\nChicosanphamcianhunglaodongtunhandoclapvakhongphythuocvaonhaumoidoidienvoi nhau\nnhui la:\nA. Nhung hang hoa\nB. Nhung san vat trao doi\nC.Nhuingsanphamtraodoi",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT 7",
+      "sp cia nhirng lao dong tu nhan doc lap- k phu",
+      "thuoc -->hang hoaaaaaa",
+      "-->A"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT 7: sp cia nhirng lao dong tu nhan doc lap- k phu thuoc -->hang hoaaaaaa -->A"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "filename": "Q011.png",
+    "question_text": "Q11\nTientecomaychuicnang?\nA.Bachticnang\nB.Namchuicnang\nC.Sauchicnang\nD.Baychuicnang",
+    "comment_lines": [
+      "xuanthangmagi",
+      "b",
+      "skibidi1231",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "b.",
+      "nguyenhai18052004",
+      "tien te co 5 chic nang",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: b",
+      "skibidi1231: b",
+      "Aim cuc zang cua FPT ↑: b.",
+      "nguyenhai18052004: tien te co 5 chic nang",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "filename": "Q012.png",
+    "question_text": "Q12\nLuonggia tri hang hoa nhieuhay it, caohay thap,dudc xac dinh nhu the nao?\nA.Xacdinhbangthoigianlaodongcabiet\nB.Xacdinh bang thoi gianlao dongxa hoi canthiet\nC. Xac dinh bang thdi gian lao dong gian don, trung binh xa hoi can thiet\nD. Xac dinh bang thoi gian lao donggian don",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "lurong hang hoa nhieu hay it, cao hay thap xac",
+      "dinh bang thoi gian lao dong xa hoi can thiet",
+      "TNDN28",
+      "b",
+      "10 diem",
+      "B",
+      "khoinguyen2108",
+      "B"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: lurong hang hoa nhieu hay it, cao hay thap xac dinh bang thoi gian lao dong xa hoi can thiet",
+      "TNDN28: b",
+      "10 diem: B",
+      "khoinguyen2108: B"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "filename": "Q013.png",
+    "question_text": "Q13\nTheokinhte-chinhtri Mac-Lenin,loaitien naocochuicnangcattru?\nA. Tien giay\nB. Tien dien tui\nC. Tien vang\nD.Bitcoin",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "filename": "Q014.png",
+    "question_text": "Q14\nLuuthong hang hoa dua trennguyentac nganggia.Dieu nay duioc hieu nhu the nao la dung?\nA.Gia ca cuatuinghanghoa luonluonbanggia tri cua no\nB.Giatriluon luonbanggiaca\nC.Giacacothetachroigiatrivaxoayquanhgiatri cuano",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT",
+      "C. gia ca co the tach roi va xoay quanh gtri cia",
+      "no",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT: C. gia ca co the tach roi va xoay quanh gtri cia no",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "filename": "Q015.png",
+    "question_text": "Q15\nTien congtrongchu nghiatu bancomayhinhthuic?\nA.Haihinhthuic\nB.Bahinhthuic\nC.Bonhinhthuic\nD.Mothinhthuic",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "tien cong co hai hinh thc",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT",
+      "a. 2 hinh thipc: theo time va sp",
+      "Tuoc01",
+      "tien cong trong chu nghia tur ban co 2 hinh thuc"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: tien cong co hai hinh thc",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT: a. 2 hinh thipc: theo time va sp",
+      "Tuoc01: tien cong trong chu nghia tur ban co 2 hinh thuc"
+    ],
+    "votes": {
+      "A": 3,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "filename": "Q016.png",
+    "question_text": "Q16\nNhungnhanxetduoi day vephuongphapsanxuatgiatri thang dutuyet doi,nhanxet naolakhongduing?\nA. Chu yeuapdung ogiaidoan dau cua chu nghia tui bankhiky thuat conthu cong lachau\nB. Gia tri suic laodongkhong thay doi\nC.Ngaylaodongkhongthaydoi",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "nhan xet k dung ve san xuat gia tri thang dup",
+      "tuyet doi -> ngay lao dong k doi",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: nhan xet k dung ve san xuat gia tri thang dup tuyet doi -> ngay lao dong k doi",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 4,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 17,
+    "filename": "Q017.png",
+    "question_text": "Q17\nCong thuicchungcuatu banlagi?\nA. T-H-T\nB. T-H-T\nC. H-T-H\nD. T-H-H-T",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "T-H-T",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT 7",
+      "A",
+      "Tuoc01",
+      "cong thupc chung cia tu ban T-H-T'"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: T-H-T",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT 7: A",
+      "Tuoc01: cong thupc chung cia tu ban T-H-T'"
+    ],
+    "votes": {
+      "A": 3,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "filename": "Q018.png",
+    "question_text": "Q18\nGia tri suic lao dong duoc do gian tiep bang:\nA. Gia tri cua nhung tu lieu san xuat de nuoi song nguoi lao dong\nB. Giatricua nhuingtulieutieudungdenuoisongnguoilaodong\nC. Gia ca cua nhuing tu lieutieu dung denuoisongban than nguoi lao dong\nD. Gia tri cua nhung tui lieu tieu dung de nuoi song nha tu ban",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "gia tri surc lao dong -> gia tri tup lieu tieu dung",
+      "de nuoi song nguroi lao dong",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "c",
+      "Kien01102004",
+      "tup lieu tieu dung - nuoi nguroi lao dong"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: gia tri surc lao dong -> gia tri tup lieu tieu dung de nuoi song nguroi lao dong",
+      "skibidi1231: b",
+      "TNDN28: c",
+      "Kien01102004: tup lieu tieu dung - nuoi nguroi lao dong"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 2,
+      "C": 1,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "filename": "Q019.png",
+    "question_text": "Q19\nNeu nha tu ban tra cong theo dung gia tri suic lao dong thi co con boc lot gia tri thang du khong?\nA. Khong con\nB. Tuy truong hop cu the\nC. Van con",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT",
+      "Vi nha tup ban tra cong theo gia tri surc lao",
+      "dong, chu khong tra toan bo gia tri ma nguoi",
+      "lao dong tao ra.",
+      "Aim cuc zang cua FPT",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT: Vi nha tup ban tra cong theo gia tri surc lao dong, chu khong tra toan bo gia tri ma nguoi lao dong tao ra.",
+      "Aim cuc zang cua FPT: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 4,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "filename": "Q020.png",
+    "question_text": "Q20\nXuhuong chungcuasanxuattubanchu nghiala:\nA.Nangcaomtictiencong\nB.Hathapmtictiencong\nC.Giunguyenmuctiencong",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT 7",
+      "b. xu huong chung cia sx TBCN --> ha thap",
+      "mirc tien cong",
+      "Tuoc01",
+      "san xuat tu ban chi nghia => ha thap mic tien",
+      "cong"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT 7: b. xu huong chung cia sx TBCN --> ha thap mirc tien cong",
+      "Tuoc01: san xuat tu ban chi nghia => ha thap mic tien cong"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 21,
+    "filename": "Q021.png",
+    "question_text": "Q21\nTichtuvataptrungtui bangiongnhauo.\nA.Deulatangquymotuibancabiet\nB.Conguongoctruictiepgiongnhau\nC.Deulatangquymotuibanxahoi",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "tich tu va tap trung deu tang quy mo tup ban ca",
+      "biet; tich tu lon tup ben trong, tap trung hop luc",
+      "tip ben ngoai",
+      "Aim cuc zang cua FPT ↑",
+      "tich tu va tap trung tu ban - giong nhau",
+      "--> A. tang quy mo tup ban ca biet",
+      "Tuoc01",
+      "tich tu va tap trung tu ban giong nhau o => deu",
+      "la tang quy mo tup ban ca biet",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: tich tu va tap trung deu tang quy mo tup ban ca biet; tich tu lon tup ben trong, tap trung hop luc tip ben ngoai",
+      "Aim cuc zang cua FPT ↑: tich tu va tap trung tu ban - giong nhau --> A. tang quy mo tup ban ca biet",
+      "Tuoc01: tich tu va tap trung tu ban giong nhau o => deu la tang quy mo tup ban ca biet",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 3,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "filename": "Q022.png",
+    "question_text": "Q22\nBoclotgiatrithangduituiongdoilahinhthuic:\nA. Tang thoi gian ngay lao dong\nB.Rutnganthoigian lao dongcanthiet vathoigian lao dongthangdu\nC. Ruit ngan thoi gian lao dong tat yeu\nD. Tang thoi gianlao dong tat yeu",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "boc lot gia tri thang du turong doi -> rut ngan",
+      "thoi gian lao dong tat yeu",
+      "Aim cuc zang cua FPT 7",
+      "boc lot gtri thang du turong doi-> rut ngan thoi",
+      "gian lao dong tat yeu",
+      "--> C",
+      "Tuoc01",
+      "boc lot gia tri thang dup => rut ngan thoi gian lao",
+      "dong tat yeu",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: boc lot gia tri thang du turong doi -> rut ngan thoi gian lao dong tat yeu",
+      "Aim cuc zang cua FPT 7: boc lot gtri thang du turong doi-> rut ngan thoi gian lao dong tat yeu --> C",
+      "Tuoc01: boc lot gia tri thang dup => rut ngan thoi gian lao dong tat yeu",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 3,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "filename": "Q023.png",
+    "question_text": "Q23\nChiphisanxuattuibanchunghia(k)la:\nA.Baogommvav(k=m+v)\nB. Baogomcvam (k=c+m)\nC. Bao gom c va v (k = c+v)\nD.Baogomc,vvam(k=c+v+m)",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "TNDN28",
+      "kcv",
+      "Kien01102004",
+      "kcv",
+      "Aim cuc zang cua FPT 7",
+      "chi phi sx TBCN --> gom c va v(k=C+V)",
+      "--> C",
+      "Tuoc01",
+      "kcv"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "TNDN28: kcv",
+      "Kien01102004: kcv",
+      "Aim cuc zang cua FPT 7: chi phi sx TBCN --> gom c va v(k=C+V) --> C",
+      "Tuoc01: kcv"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 2,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "filename": "Q024.png",
+    "question_text": "Q24\nDaukhongphaidactrungcuachunghiatuban?\nA.Quyensohuutulieusanxuatthuocvenhanuioc\nB. Tich ly tuiban\nC.Traodoitunguyen\nD.Mothethonggiacavathitruiongcanhtranh",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "filename": "Q025.png",
+    "question_text": "Q25\nXuatkhaugiatriranuocngoainhammucdichthuduiocgiatrithangduvacacnguonloikhaco cacnuidcma\nminh dau tu goila gi?\nA. Xuatkhautui ban\nB.Nhapkhautuban\nC. Dau tu thi truong\nD.Dautuitiente",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "filename": "Q026.png",
+    "question_text": "Q26\nTronggiaidoanchu nghiatubandocquyen,ngoaisu canhtranhgiuanhungnguioisanxuatnho,giuanhting\nnhatu ban vuiava nho nhu tronggiai doan chu nghia tuiban canh tranhtu do,ma con cothem cac loai canh\ntranhsau:(chonnhieudapan)\nA.canhtranhgiuacactochuicdocquyenvoicacxinghiepngoaidocquyen\nB.Canhtranhgiuacacto chuicdocquyenvdi nhau\nC. Canh tranh trong noi bo cac to chuc doc quyen\nD.Canhtranhgiuacactochuictuibandocquyennhanudocvdinhau",
+    "comment_lines": [
+      "skibidi1231",
+      "abc",
+      "TNDN28",
+      "abc",
+      "Aim cuc zang cua FPT ↑",
+      "ABC",
+      "phunne123",
+      "abc",
+      "Asaki0556",
+      "abc"
+    ],
+    "formatted_comments": [
+      "skibidi1231: abc",
+      "TNDN28: abc",
+      "Aim cuc zang cua FPT ↑: ABC",
+      "phunne123: abc",
+      "Asaki0556: abc"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 27,
+    "filename": "Q027.png",
+    "question_text": "Q27\nCactochuicdocquyenhinhthanhtrencdso\nA.Lienketdocvalienketngang\nB.Lienkettuigiacvalienkettuphat\nC.Lienketbenngoai valienketbentrong",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT 7",
+      "A.",
+      "to chipc doc quyen hinh thanh tren co so lien",
+      "két doc& ngang",
+      "Tuoc01",
+      "to chipc doc quyen hinh thanh tren co so =>",
+      "lien ket doc va ngang"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT 7: A. to chipc doc quyen hinh thanh tren co so lien két doc& ngang",
+      "Tuoc01: to chipc doc quyen hinh thanh tren co so => lien ket doc va ngang"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "filename": "Q028.png",
+    "question_text": "Q28\nNhandinhnaosaudaylasai?\nA.Consortium lahinhthuictochuicdocquyentheolienketdoc\nB.TrustlatochuicdocquyencaohonSyndicate\nC.Cac to chuc doc quyen md rong ra nhieunganhkhac nhau la phat trien theokieu lienket doc\nD. Cacnha tui ban tham gia Cartel vandoc lap vesan xuat nhung mat doc lap ve luu thong",
+    "comment_lines": [
+      "xuanthangmagi",
+      "D",
+      "skibidi1231",
+      "d",
+      "TNDN28",
+      "D",
+      "Aim cuc zang cua FPT ↑",
+      "D",
+      "Tuoc01",
+      "Cartel"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: D",
+      "skibidi1231: d",
+      "TNDN28: D",
+      "Aim cuc zang cua FPT ↑: D",
+      "Tuoc01: Cartel"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 4
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "filename": "Q029.png",
+    "question_text": "Q29\nTrong giai doan chu nghiatu ban canh tranhtu do, quy luatgia tri thang du bieu hienthanhquy luat:\nA.Loi nhuan doc quyen\nB.Tysuatloinhuanbinhquan\nC.Loinhuandocquyencao\nD.Ty suat gia tri thang du",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "quy luat gia tri thang du bieu hien thanh ty suat",
+      "loi nhuan binh quan",
+      "TNDN28",
+      "B",
+      "Aim cuc zang cua FPT",
+      "b",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: quy luat gia tri thang du bieu hien thanh ty suat loi nhuan binh quan",
+      "TNDN28: B",
+      "Aim cuc zang cua FPT: b",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "filename": "Q030.png",
+    "question_text": "Q30\nVisaotrongchunghiatuibandocquyencanhtranhkhongbithutieu?\nA.Vicanhtranhlaquyluatkhachquancuakinhtehanghoa\nB.Vitochuicdocquyencanhtranhvdicaccongtyngoaidocquyen\nC.Vicacxinghieptrongnoibotochuicdocquyencanhtranhvoinhau\nD.Khongcocanhtranh",
+    "comment_lines": [
+      "in TheJungle",
+      "ABC deu dung ma nhi mn oi",
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A"
+    ],
+    "formatted_comments": [
+      "in TheJungle: ABC deu dung ma nhi mn oi",
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 31,
+    "filename": "Q031.png",
+    "question_text": "Q31\nSu phattriencuatu bantaichinhdandensuhinhthanhcua:\nA. Cac nhataiphiet\nB.Cactapdoantaichinh\nC.Cacdoanhnghieptuinhan\nD.Caccongty me",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT",
+      "su ptr cia tup ban tai chinh---> hinh thanh- cac",
+      "nha tai phiet",
+      "-->A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT: su ptr cia tup ban tai chinh---> hinh thanh- cac nha tai phiet -->A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "filename": "Q032.png",
+    "question_text": "Q32\nSuradoicuaCNTBdocquyennhanuocnhammucdich:\nA. Phucvuloiichcuatochuicdocquyentu nhanva cuunguychochi nghiatuban\nB.Phucvuloiichcuatochuicdocquyentunhan\nC.Phucvuloiichcuanhanuioctuisan",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT",
+      "su ra doi cia TBCN doc quyen nha nuoc -->",
+      "A. phuc vu loi ich cia to chic doc quyen tup",
+      "nhan+ cipu nguy cho CNTB",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT: su ra doi cia TBCN doc quyen nha nuoc --> A. phuc vu loi ich cia to chic doc quyen tup nhan+ cipu nguy cho CNTB",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 33,
+    "filename": "Q033.png",
+    "question_text": "Q33\nkinh te thi truong?\nA. San xuat\nB.Trao doihang hoa\nC. Thi truong\nD.Sanxuatvatraodoihanghoa",
+    "comment_lines": [
+      "xuanthangmagi",
+      "D",
+      "skibidi1231",
+      "D",
+      "TNDN28",
+      "D",
+      "Aim cuc zang cua FPT ↑",
+      "D",
+      "phunne123",
+      "d"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: D",
+      "skibidi1231: D",
+      "TNDN28: D",
+      "Aim cuc zang cua FPT ↑: D",
+      "phunne123: d"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 5
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "filename": "Q034.png",
+    "question_text": "Q34\nThecheduoc hieula gi?\nA.Nhungquytac,phapluat,bomayquanli vacochevanhanhnhamdieuchinhcachoatdongcuacon\nnguoitrong1chedoxahoi\nB.Luat choi chinhthuic va phichinhthucduoc datradoivoi cacchuthetham giahoatdongtrong nenkinhte\ncuamotquocgiatrongmotgiaidoanlichstinhatdinh\nC.Dudccauthanhboihethongcacbophankhacnhaumamoi bophancunglamothethongphuctapgom\nnhieuyeuto\nD.Quyluatvandongvaphattrienciamotcongdongxahoi",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 35,
+    "filename": "Q035.png",
+    "question_text": "Q35\nVevitri lichsu,kinhtethitruongcodacdiemgi?\nA.Dochunghiatuibansinhra\nB.Cociungbanchatvoikinhtehanghoa\nC.Tontai chuquantrongthoikyqua do len chu nghiaxahoi\nD.Lasanphamriengcuachunghiatuiban",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "B",
+      "Kien01102004",
+      "kinh te thi trurong co cung ban chat voi kinh te",
+      "hang hoa",
+      "Aim cuc zang cua FPT 7",
+      "B"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: B",
+      "Kien01102004: kinh te thi trurong co cung ban chat voi kinh te hang hoa",
+      "Aim cuc zang cua FPT 7: B"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "filename": "Q036.png",
+    "question_text": "Q36\nDai hoinaocuaDangCongsanVietNamdecapdensu canthietdoimoicochequanlykinhte?\nA. Dai hoi dang V\nB. Dai hoi dang VI\nC. Dai hoidang VIl\nD.Daihoidang Vill",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "dé cap -> 6",
+      "TNDN28",
+      "B",
+      "Aim cuc zang cua FPT",
+      "doi moi- dai hoi dang VI",
+      "--> B",
+      "Tuoc01",
+      "dang cong san viet nam => dai hoi dang VI"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: dé cap -> 6",
+      "TNDN28: B",
+      "Aim cuc zang cua FPT: doi moi- dai hoi dang VI --> B",
+      "Tuoc01: dang cong san viet nam => dai hoi dang VI"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 3,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "filename": "Q037.png",
+    "question_text": "Q37\nXaydungnenkinhtethitruongdinhhuongxahoichu nghiao Viet Nam nhamthuichienmuctieu gi?\nA.Dangiau,nuocmanh,danchu,congbang,vanminh\nB.Dangiau,nuiocmanh,congbang,danchi,vanminh\nC.Dan giau,nuocmanh, van minh, cong bang,dan chu\nD. Dan giau, nuoc manh, dan chu, van minh, cong bang",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 38,
+    "filename": "Q038.png",
+    "question_text": "Q38\nCongbangtrongphanphoiconhungquanniemchinhnao?\nA.Congbangtheomticdovacongbangtheochticnang\nB.Congbangtheohuongthuvacongbangtheoconghien\nC.Congbangtheolaodongvacongbangtheohuongthu\nD.Congbangtheomuic dovacongbangtheo laodong",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT ↑",
+      "A. cong bang phan phoi theo mirc do + chipc",
+      "nang",
+      "Tuoc01",
+      "cong bang theo mic do va cong bang theo",
+      "chirc nang"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT ↑: A. cong bang phan phoi theo mirc do + chipc nang",
+      "Tuoc01: cong bang theo mic do va cong bang theo chirc nang"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "filename": "Q039.png",
+    "question_text": "Q39\nChoncau saikhi noivekinhtethitruong.\nA.Kinhtethitruongdoilapvdikinhtetunhien\nB.Kinhtethitruongdoilapvoicacchedoxahoi\nC.Kinhtethitruonglathanhtuu chungcua nhanloai\nD. Kinh tethi truong phat trien manh nhat trong xa hoi chu nghia tui ban",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT 7",
+      "b",
+      "Tuoc01",
+      "kinh te thi trurong doi lap voi cac ché do xa hoi"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT 7: b",
+      "Tuoc01: kinh te thi trurong doi lap voi cac ché do xa hoi"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 40,
+    "filename": "Q040.png",
+    "question_text": "Q40\nPhan chia theo tieu chicautruic cua cactochuic tham gia xa hoi,the cheduioc chia thanh:\nA.Thechecong,thechetui\nB.Thechenhanuoc,thechetubantuinhan\nC.Thechenuidctrongvangoainuoc\nD.Thechechinhtrivathe chekinhte",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "A",
+      "Aim cuc zang cua FPT",
+      "the ché chia thanh 2 tieu chi : cong va tup",
+      "-->A",
+      "Tuoc01",
+      "thé ché cong va the ché tu"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: A",
+      "Aim cuc zang cua FPT: the ché chia thanh 2 tieu chi : cong va tup -->A",
+      "Tuoc01: thé ché cong va the ché tu"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 41,
+    "filename": "Q041.png",
+    "question_text": "Q41\nQuandiem\"doimdiphai luon luonquantriat quandiem\"danlagoc\"viloiich cuanhandan,dua vaonhandan,\nphathuyvaitrolamchu,tinhthantrachnhiem,sucsangtaovamoinguonluccuanhandan,phathuystic\nmanhdaidoanketdantoc\"duiocduaratrongdaihoinao?\nA.DaihoidangX\nB.Dai hoidang XI\nC.Daihoidang XIl\nD.DaihoidangXIll",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "dan a goc -> 12",
+      "TNDN28",
+      "dan la goc => dai hoi dang XIl",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "Tuoc01",
+      "\" dan la goc \" => dai hoi dang XIl"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: dan a goc -> 12",
+      "TNDN28: dan la goc => dai hoi dang XIl",
+      "Aim cuc zang cua FPT ↑: c",
+      "Tuoc01: \" dan la goc \" => dai hoi dang XIl"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 2,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 42,
+    "filename": "Q042.png",
+    "question_text": "Q42\nNguon goc naokhong dung voinguon von cong nghiep hoa o cac nuidc tu ban codien?\nA.Cuopbocthuocdia\nB.Khai thaclaodonglamthue\nC.Lamphasannhungnguoisanxuatnhotrongnongnghiep\nD.Divaynhanuioc",
+    "comment_lines": [
+      "xuanthangmagi",
+      "D",
+      "skibidi1231",
+      "D",
+      "TNDN28",
+      "D",
+      "Aim cuc zang cua FPT ↑",
+      "D",
+      "Tuoc01",
+      "di vay nha nuoc"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: D",
+      "skibidi1231: D",
+      "TNDN28: D",
+      "Aim cuc zang cua FPT ↑: D",
+      "Tuoc01: di vay nha nuoc"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 4
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 43,
+    "filename": "Q043.png",
+    "question_text": "Q43\nNoidungcongcuocdaiphanconglaodongxahoilanthuibalagi?\nA.Daicongnghieptachkhoinongnghiep\nB.Trongtrottachkhoichannuoi\nC. Nganhthuong nghiepra doi\nD.Thucongnghieptachkhoinongnghiep",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "Tuoc01",
+      "thu 3 => thuong nghiep ra doi"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c",
+      "Tuoc01: thu 3 => thuong nghiep ra doi"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 4,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 44,
+    "filename": "Q044.png",
+    "question_text": "Q44\nCongnghiephoa,hiendai hoadatnudcphaibaodammucdichgi?\nA.Xaydungnenkinhtekhepkinvahuiongnoi\nB.Xaydungnenkinhtedoclaptuchu\nC.Xayduingnenkinhtephaiduiavaosu giupdovalethuocvaocacnuidctui ban\nD.Xaydungnenkinhtemd nhuingchigiaoluuhoptac vdi cac nuocxahoichunghia",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "B",
+      "Tuoc01",
+      "xay dung nen kinh te doc lap, tu chu",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT ↑: B",
+      "Tuoc01: xay dung nen kinh te doc lap, tu chu",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 4,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 45,
+    "filename": "Q045.png",
+    "question_text": "Q45\ncau nao?\nA.Phattrienkinhtevacongnghiepphai cosunhayvotvakhongcanthuichientuantu\nB.Coi trongphattriengiaoducvadaotao,khoahoc va congnghe,xemdaylanentangvadongluiccho\ncongnghiephoa,hiendaihoa\nC.Phattrienkinhtetrithuicduoc doilaitronggiai doansau\nD.Uutienphattrien congnghiepnangmotcach hoplytrenco sophat triennongnghiepvacongnghiepnhe",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "B",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT ↑: B",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 5,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 46,
+    "filename": "Q046.png",
+    "question_text": "Q46\nDang Cong san Viet Nam luon nhan manh tam quan trong cua viec xay duing nen kinhte nhu thenao?\nA.Mdcila\nB.Doclap,tuchu\nC.Hoinhapkinhtequocte\nD. Cotinhcanhtranh",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "B",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT ↑: B",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 5,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 47,
+    "filename": "Q047.png",
+    "question_text": "Q47\nCachmangcongnghieplanthu nhatdienratrongthdigian nao?\nA.TugitiathekyXVdengiuiathekyXIX\nB.TugiuathekyXVIdengiuathekyXVll\nC. Tu giuia the ky XVIll den giua the ky XIX\nD.TugiuathekyXIXdengiuathekyXX",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "nguyenhai18052004",
+      "18-19"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c",
+      "nguyenhai18052004: 18-19"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 4,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 48,
+    "filename": "Q048.png",
+    "question_text": "Q48\nQuandiemve\"xaydungnenkinhtetuchuphaiduatrencdsolamchucongnghevachudong,tichcuchoi\ntrienkinhte-xahoidgiai doannao?\nA.Chienluiocphattrienkinhte-xahoi2001-2010\nB.Chienluiocphattrienkinhte-xahoi2011-2020\nC.Chien luioc phat trienkinh te-xahoi2021-2030\nD.Chienluiocphattrienkinhte-xahoi2016-2021",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c",
+      "nguyenhai18052004",
+      "2021 - 2030",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c",
+      "nguyenhai18052004: 2021 - 2030",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 4,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 49,
+    "filename": "Q049.png",
+    "question_text": "Q49\nKhi nghiencuuvecachmang congnghieplanthunhat,C.Macdakhai quat tinhquy luat cua cacmang cong\nnghiepquacacgiaidoanphattriendolagi?\nA. Hiep tac don gian, lao dong thu cong, lao dong phuic tap\nB.Hieptacdongian,congtruongthucong,congnghiephoa\nC.Hieptac don gian,san xuatthu cong,san xuat hien dai\nD.Hieptacdongian,congtruongthucong,daicongnghiep",
+    "comment_lines": [
+      "xuanthangmagi",
+      "D",
+      "skibidi1231",
+      "d",
+      "TNDN28",
+      "d",
+      "Aim cuc zang cua FPT 7",
+      "D",
+      "nguyenhai18052004",
+      "hiep tac don gian - cong trurong thu cong - dai",
+      "cong nghiep"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: D",
+      "skibidi1231: d",
+      "TNDN28: d",
+      "Aim cuc zang cua FPT 7: D",
+      "nguyenhai18052004: hiep tac don gian - cong trurong thu cong - dai cong nghiep"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 4
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 50,
+    "filename": "Q050.png",
+    "question_text": "Q50\nNoidungcongcuocdaiphanconglaodongxahoilanthuihailagi?\nA.Daicongnghieptachkhoinongnghiep\nB.Trongtrottachkhoichannuoi\nC. Nganhthuong nghiepra doi\nD.Thicongnghieptachkhoinongnghiep",
+    "comment_lines": [
+      "xuanthangmagi",
+      "D",
+      "skibidi1231",
+      "thtp 2 : thu cong tach khoi nong",
+      "TNDN28",
+      "d",
+      "Aim cuc zang cua FPT",
+      "D",
+      "Tuoc01",
+      "thup 2. > thu cong nghiep tach khoi nong nghiep"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: D",
+      "skibidi1231: thtp 2 : thu cong tach khoi nong",
+      "TNDN28: d",
+      "Aim cuc zang cua FPT: D",
+      "Tuoc01: thup 2. > thu cong nghiep tach khoi nong nghiep"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 3
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 51,
+    "filename": "Q051.png",
+    "question_text": "Q51\nO Viat Nam cung nhu tren the gidi su dung thuat ngu\"cach mang cong nghiep lan thu tu\" vdi ham y gi?\nA.Suthaydoiveluiongtrongluc luiongsanxuat cuanenkinhtethegidi\nB.Suthaydoivechattrongluicluiongsanxuatcuanenkinhtethegidi\nC.Suthaydoivechattrongquanhesanxuatcuanenkinhtethegioi\nD.Suthaydoicanban,toandientrongdoi song,sanxuatcuanenkinhtethegidi",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "b. thay doi ve chat trong :LLSX",
+      "phunne123",
+      "b"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT ↑: b. thay doi ve chat trong :LLSX",
+      "phunne123: b"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 5,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 52,
+    "filename": "Q052.png",
+    "question_text": "Q52\nA.Suphattrienvuiotbaccuaquanhesanxuat\nB.Phuongthuicsanxuatmoiradoi\nC. Su phat trien nhay vot ve trinh do cua tui lieu lao dong\nD.Cacphatminhsangchecuacacnhakhoahoctrenmoi linhvuc",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 53,
+    "filename": "Q053.png",
+    "question_text": "Q53\nCachmangcongnghieplanthu badienratronggiai doannao?\nA.Tuidauthapnien50cuathekyXXdencuoithekyXX\nB.Tuidauthapnien60cuathekyXXdencuoithekyXX\nC.Tuidauthapnien70cuathekyXXdencuoithekyXX\nD.Tuidauthapnien80cuathekyXXdencuoithekyXX",
+    "comment_lines": [
+      "xuanthangmagi",
+      "B",
+      "xuanthangmagi",
+      "B",
+      "skibidi1231",
+      "b",
+      "TNDN28",
+      "b",
+      "Aim cuc zang cua FPT ↑",
+      "b. lan thp 3: nhting nam 1960",
+      "--> B"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: B",
+      "xuanthangmagi: B",
+      "skibidi1231: b",
+      "TNDN28: b",
+      "Aim cuc zang cua FPT ↑: b. lan thp 3: nhting nam 1960 --> B"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 5,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 54,
+    "filename": "Q054.png",
+    "question_text": "Q54\nDien vaochotrong:C.Mac va Ph.Angghen da nhan xet rang:\"Giaicaptu san, trong qua trinh thong tri giai\ncapchuiadaymottheky,datao ranhung... nhieuhon vadosohon...cuatat ca cacthehetruockiagoplai\"\nA.Luicluiongsanxuat..luicluiongsanxuat\nB.Quanhesanxuat..quanhesanxuat\nC.Cuacai..cuacai\nD.Vatchat...vatchat",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "a",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: a",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 55,
+    "filename": "Q055.png",
+    "question_text": "Q55\nMoi cuoccach mang cong nghiepxuat hien deu co su phat trien nhay vot ve:\nA. Tu lieu lao dong\nB. Tu lieu sinh hoat\nC. Tu lieutieu dung\nD.Cacphatminhsangche",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "a",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: a",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 56,
+    "filename": "Q056.png",
+    "question_text": "Q56\nDienvaochotrong:TheoKarl Marx,kinhtechinhtri hoctusan codienAnhbatdautui... vaketthuico..\nA.WilliamPetty...DavidRicardo\nB.WilliamPetty...AdamSmith\nC.AdamSmith...DavidRicardo\nD.AdamSmith..ThomasMalthus",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "a",
+      "TNDN28",
+      "a",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: a",
+      "TNDN28: a",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 57,
+    "filename": "Q057.png",
+    "question_text": "Q57\nDangcongsanViatNamladangcamquyendoyeutonaosaudayquydinh?\nA. Lichstichuquan\nB. Chinh tri chi quan\nC. Lich su khach quan\nD.Donhandanlaodongluachon",
+    "comment_lines": [
+      "xuanthangmagi",
+      "c",
+      "skibidi1231",
+      "c",
+      "TNDN28",
+      "c",
+      "Aim cuc zang cua FPT ↑",
+      "Theo quan diem cia mon Kinh te chinh tri Mac",
+      "- Lenin, Dang Cong san Viet Nam tro thanh",
+      "dang cam quyen la do yeu cau va tien trinh lich",
+      "si khach quan, khong phai do y chi chu quan.",
+      "Dang cong san VN - dang cam quyen do lich",
+      "sip khach quan",
+      "--> C",
+      "phunne123",
+      "c"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: c",
+      "skibidi1231: c",
+      "TNDN28: c",
+      "Aim cuc zang cua FPT ↑: Theo quan diem cia mon Kinh te chinh tri Mac - Lenin, Dang Cong san Viet Nam tro thanh dang cam quyen la do yeu cau va tien trinh lich si khach quan, khong phai do y chi chu quan. Dang cong san VN - dang cam quyen do lich sip khach quan --> C",
+      "phunne123: c"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 58,
+    "filename": "Q058.png",
+    "question_text": "Q58\nMoitu ban deu bieu hien duoi dang tien, nhuing tienkhong phaila tu ban. Vaykhi nao tien trd thanh tu ban?\nA.Tien bien thanhtu bankhiduidc dung demang lai gia tri thang du.\nB. Tien bien thanh tu bankhi duioc dung demang lai dia vi lam chu nha tuban.\nC.Tienbienthanhtubankhi duocdungdemanglai giatri chung chotoanxahoi.\nD. Tien bien thanh tuibankhi duioc dung voi vaitro la mot phuiong tien thanh toan.",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "a",
+      "Aim cuc zang cua FPT ↑",
+      "A",
+      "phunne123",
+      "a"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: a",
+      "Aim cuc zang cua FPT ↑: A",
+      "phunne123: a"
+    ],
+    "votes": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 59,
+    "filename": "Q059.png",
+    "question_text": "Q59\nCacnhantonaosaudayanhhuongdennangsuatlaodong?\nA.Trinhdokheoleotrungbinhcuanguidilaodong,Muicdophattriencuakhoahocvatrinhdoapdungkhoa\nxuat,Cacdieukientunhien\nB.Cac chinhsachquy dinh tuinha nudc;Phuiongphapvaquydinhgidlam viec va daingo,Suhoptaccua\nquatrinhlamviecnhomhieuqua;Suphat trienvadaotao lientucKha nangsangtao va doimdi vathaydoi\ntuduy\nC.Trinhdo vakynang cua nguoilaodongngaycangduocnang cao,Moitruonglam viecphuhopphathuy\nxuat\nD.Chatluongnguyenlieuvacongcusanxuatdapungnhu cauchoquatrinhsanxuat,Susansangcua\nnguontaichinh mangtinh on dinh dau tui vaomay moc;Muic dotui chinhat dinh cua nguoi lao dong trong qua\ntrinh san xuat lao dong,Su cong bang trong qua trinh lao dong hoat dong san xuat, Thoi tiet va dieukien moi\ntruongtu nhien",
+    "comment_lines": [
+      "xuanthangmagi",
+      "A",
+      "skibidi1231",
+      "A",
+      "TNDN28",
+      "a",
+      "Aim cuc zang cua FPT",
+      "nhan to anh hurong nang suat lao dong",
+      "--> A. trinh do kheo leo trung binh cia ng lao",
+      "dong + muc do ptr KH va trinh do ap dung + su",
+      "két hop XH + quy mo va hieu xuat + cac dieu",
+      "kien tur nhien",
+      "Tuquynh0412",
+      "AC"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: A",
+      "skibidi1231: A",
+      "TNDN28: a",
+      "Aim cuc zang cua FPT: nhan to anh hurong nang suat lao dong --> A. trinh do kheo leo trung binh cia ng lao dong + muc do ptr KH va trinh do ap dung + su két hop XH + quy mo va hieu xuat + cac dieu kien tur nhien",
+      "Tuquynh0412: AC"
+    ],
+    "votes": {
+      "A": 4,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "single",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 60,
+    "filename": "Q060.png",
+    "question_text": "Q60\nSuvandongcuatientrongnensanxuathanghoagiandon(H-T-H),suvandongcuatientrongnensanxuat\nhang hoatu ban (T-H-T\").Hay chiradiem chung cua hai hinhthucvandong nay?(lua chonhaidap an)\nA.Deu cohaithuic the vatchatla tien va hang.\nB.Deubatdaubanghanhviban.\nC.Deucohaihanhvidoilapnhau-muavaban.\nD.Deuketthucbanghanhvimua.",
+    "comment_lines": [
+      "xuanthangmagi",
+      "AC",
+      "skibidi1231",
+      "deu co 2 thuc them deu co 2 hanh vi doi lap",
+      "TNDN28",
+      "ac",
+      "Aim cuc zang cua FPT",
+      "AC",
+      "phunne123",
+      "ac"
+    ],
+    "formatted_comments": [
+      "xuanthangmagi: AC",
+      "skibidi1231: deu co 2 thuc them deu co 2 hanh vi doi lap",
+      "TNDN28: ac",
+      "Aim cuc zang cua FPT: AC",
+      "phunne123: ac"
+    ],
+    "votes": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "type": "multi",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": [
+      "A",
+      "C"
+    ]
+  }
+]
