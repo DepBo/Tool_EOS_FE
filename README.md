@@ -10,7 +10,7 @@ Bộ công cụ cung cấp 2 chế độ học tập tùy chọn theo nhu cầu:
 
 ### 1. 🏛️ Chế độ Thi Thử Chuẩn EOS (`index.html`)
 * **Mô phỏng chân thực phần mềm thi EOS của FPT**: Danh sách chọn đáp án dọc bên trái cho câu hỏi hiện tại, hình ảnh câu hỏi sạch bên phải (đã tự động cắt bỏ phần bình luận).
-* **Nộp bài & Chấm điểm**: Sau khi hoàn thành và bấm **Nộp bài**, hệ thống tính điểm thang 10, hiển thị xếp loại (Xuất sắc / Giỏi / Đạt).
+* **Nộp bài & Chấm điểm**: Có **đồng hồ đếm thời gian làm bài (Stopwatch)** tính từ lúc bắt đầu đến khi nộp bài. Sau khi bấm **Nộp bài**, hệ thống hiển thị tổng thời gian làm bài, điểm số thang 10 và xếp loại.
 * **Xem lại câu sai (Review Mode)**: Chế độ lọc riêng các câu làm sai, lật mở ảnh gốc kèm đầy đủ comment thảo luận của sinh viên trên FuOverflow và đối soát lý thuyết giáo trình.
 * **Cách tạo**: Chạy file `tao_de_eos.cmd`.
 
@@ -18,7 +18,7 @@ Bộ công cụ cung cấp 2 chế độ học tập tùy chọn theo nhu cầu:
 * **Kiểm tra ngay sau mỗi câu**: Tích chọn đáp án và ấn **`Enter`**:
   * 🟢 **Đúng**: Ô đáp án sáng **Xanh lá**, tự động nhảy sang câu tiếp theo sau 0.6s.
   * 🔴 **Sai**: Ô chọn báo **Đỏ**, ô đúng sáng **Xanh lá**, hiển thị ảnh gốc FuOverflow kèm phân tích giải thích để bạn đối chiếu kiến thức ngay lập tức. Sau đó ấn **`Enter`** hoặc **`➡`** để sang câu tiếp theo.
-* **Thống kê thời gian thực**: Bộ đếm câu Đúng/Sai ngay trên thanh Header, hỗ trợ nút lọc **"Câu làm SAI"** và **"Làm lại câu này (Phím R)"**.
+* **Thống kê thời gian thực**: Có **đồng hồ bấm giờ (Stopwatch)** theo dõi thời gian luyện tập, đi kèm bộ đếm câu Đúng/Sai, hỗ trợ nút lọc **"Câu làm SAI"** và **"Làm lại câu này (Phím R)"**.
 * **Cách tạo**: Chạy file `tao_de_luyen_tap.cmd`.
 
 ---

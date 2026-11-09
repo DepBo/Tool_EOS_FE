@@ -754,6 +754,9 @@ def build_practice_html_content(exam_title, quiz_items):
         </div>
 
         <div class="header-stats">
+            <div class="stat-pill" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
+                ⏱ Thời gian: <span id="elapsedTimer" style="font-family: monospace; font-size: 14px; font-weight: 800; margin-left: 3px;">00:00</span>
+            </div>
             <div class="stat-pill correct">✓ Đúng: <span id="statCorrect">0</span></div>
             <div class="stat-pill wrong">✕ Sai: <span id="statWrong">0</span></div>
             <div class="stat-pill">📊 Đã làm: <span id="statProgress">0/{len(quiz_items)}</span></div>
@@ -826,12 +829,31 @@ def build_practice_html_content(exam_title, quiz_items):
         let checkedResults = {{}};  // qid -> {{ isRight: true/false }}
         let filterMode = 'all';     // 'all' or 'wrong'
         let autoNextTimer = null;
+        let elapsedSeconds = 0;
+        let timerInterval = null;
+
+        function startTimer() {{
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {{
+                elapsedSeconds++;
+                renderTimer();
+            }}, 1000);
+        }}
+
+        function renderTimer() {{
+            const mins = Math.floor(elapsedSeconds / 60);
+            const secs = elapsedSeconds % 60;
+            const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+            const el = document.getElementById('elapsedTimer');
+            if (el) el.innerText = str;
+        }}
 
         function init() {{
             populateJumpSelect();
             loadQuestion(0);
             setupKeyboard();
             updateHeaderStats();
+            startTimer();
         }}
 
         function clearAutoTimer() {{
@@ -1152,6 +1174,9 @@ def build_practice_html_content(exam_title, quiz_items):
             userAnswers = {{}};
             checkedResults = {{}};
             filterMode = 'all';
+            elapsedSeconds = 0;
+            renderTimer();
+            startTimer();
             document.getElementById('btnFilterAll').className = 'btn-top active';
             document.getElementById('btnFilterWrong').className = 'btn-top';
             updateHeaderStats();

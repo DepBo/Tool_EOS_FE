@@ -74,6 +74,42 @@
             color: #94a3b8;
         }
 
+        .header-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .timer-box {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 5px 14px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+            user-select: none;
+        }
+
+        .timer-icon {
+            font-size: 14px;
+        }
+
+        .timer-label {
+            font-size: 11px;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .timer-display {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 18px;
+            font-weight: 800;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+
         .btn-submit {
             background: #10b981;
             color: #ffffff;
@@ -536,6 +572,14 @@
             </div>
         </div>
 
+        <div class="header-center">
+            <div class="timer-box">
+                <span class="timer-icon">⏱</span>
+                <span class="timer-label">Thời gian làm:</span>
+                <span class="timer-display" id="elapsedTimer">00:00</span>
+            </div>
+        </div>
+
         <button class="btn-submit" id="btnSubmit" onclick="openSubmitModal()">
             <span>✓</span> NỘP BÀI
         </button>
@@ -633,11 +677,31 @@
         let isSubmitted = false;
         let reviewFilter = 'all';
         let wrongIndices = [];
+        let elapsedSeconds = 0;
+        let timerInterval = null;
+
+        function startTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (isSubmitted) return;
+                elapsedSeconds++;
+                renderTimer();
+            }, 1000);
+        }
+
+        function renderTimer() {
+            const mins = Math.floor(elapsedSeconds / 60);
+            const secs = elapsedSeconds % 60;
+            const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+            const el = document.getElementById('elapsedTimer');
+            if (el) el.innerText = str;
+        }
 
         function init() {
             populateJumpSelect();
             loadQuestion(0);
             setupKeyboard();
+            startTimer();
         }
 
         function populateJumpSelect() {
@@ -867,9 +931,14 @@
                 }
             });
 
+            if (timerInterval) clearInterval(timerInterval);
+            const spentMin = Math.floor(elapsedSeconds / 60);
+            const spentSec = elapsedSeconds % 60;
+            const timeStr = (spentMin > 0 ? spentMin + ' phút ' : '') + spentSec + ' giây';
+
             const score10 = ((correctCount / QUESTIONS.length) * 10).toFixed(1);
             document.getElementById('scoreBadge').innerText = score10 + ' / 10';
-            document.getElementById('scoreDetail').innerText = 'Đúng: ' + correctCount + '/' + QUESTIONS.length + ' câu (' + Math.round((correctCount/QUESTIONS.length)*100) + '%) | Số câu sai: ' + wrongIndices.length;
+            document.getElementById('scoreDetail').innerText = 'Đúng: ' + correctCount + '/' + QUESTIONS.length + ' câu (' + Math.round((correctCount/QUESTIONS.length)*100) + '%) | Số câu sai: ' + wrongIndices.length + ' | Thời gian làm: ' + timeStr;
 
             let title = 'KẾT QUẢ BÀI THI: ';
             if (score10 >= 9.0) title += 'XUẤT SẮC 🌟';
@@ -912,6 +981,9 @@
             isSubmitted = false;
             reviewFilter = 'all';
             wrongIndices = [];
+            elapsedSeconds = 0;
+            renderTimer();
+            startTimer();
             document.getElementById('scoreBanner').classList.remove('visible');
             document.getElementById('btnSubmit').style.display = 'flex';
             loadQuestion(0);

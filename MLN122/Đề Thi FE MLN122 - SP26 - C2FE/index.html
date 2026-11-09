@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EOS Practice - MLN122 SP26 C2FE</title>
+    <title>EOS Practice - Đề Thi FE MLN122 - SP26 - C2FE</title>
     <style>
         :root {
             --bg-page: #f0f2f5;
@@ -36,7 +36,6 @@
             overflow: hidden;
         }
 
-        /* Header */
         header.eos-top {
             background: linear-gradient(135deg, var(--eos-navy) 0%, var(--eos-header) 100%);
             color: #ffffff;
@@ -75,6 +74,42 @@
             color: #94a3b8;
         }
 
+        .header-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .timer-box {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 5px 14px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+            user-select: none;
+        }
+
+        .timer-icon {
+            font-size: 14px;
+        }
+
+        .timer-label {
+            font-size: 11px;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .timer-display {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 18px;
+            font-weight: 800;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+
         .btn-submit {
             background: #10b981;
             color: #ffffff;
@@ -95,7 +130,6 @@
             transform: translateY(-1px);
         }
 
-        /* Score Banner (Review mode) */
         .score-banner {
             display: none;
             background: #1e293b;
@@ -170,14 +204,12 @@
             background: #2563eb;
         }
 
-        /* Main 2-column layout */
         .eos-layout {
             display: flex;
             flex: 1;
             overflow: hidden;
         }
 
-        /* Left Column: Vertical Checkbox Selector */
         .left-col {
             width: 320px;
             background: #ffffff;
@@ -234,7 +266,6 @@
             border: 1px solid #fde68a;
         }
 
-        /* Vertical Checkboxes */
         .checkbox-group {
             display: flex;
             flex-direction: column;
@@ -265,7 +296,6 @@
             box-shadow: 0 0 0 1px var(--eos-blue);
         }
 
-        /* Actual custom checkbox UI */
         .custom-box {
             width: 24px;
             height: 24px;
@@ -303,7 +333,6 @@
             font-weight: 500;
         }
 
-        /* Review states */
         .checkbox-row.correct {
             background: var(--eos-green-light) !important;
             border-color: var(--eos-green) !important;
@@ -326,7 +355,6 @@
             color: #fff !important;
         }
 
-        /* Left Navigation Controls */
         .nav-controls {
             display: flex;
             gap: 10px;
@@ -359,7 +387,6 @@
             cursor: not-allowed;
         }
 
-        /* Hotkey Tips */
         .hotkey-hints {
             background: #f8fafc;
             border: 1px dashed #cbd5e1;
@@ -374,7 +401,6 @@
             color: var(--eos-navy);
         }
 
-        /* Right Column: Question Image & Explanations */
         .right-col {
             flex: 1;
             background: #f8fafc;
@@ -405,7 +431,6 @@
             box-shadow: 0 1px 4px rgba(0,0,0,0.08);
         }
 
-        /* Explanation Card (Review mode) */
         .review-card {
             display: none;
             background: #ffffff;
@@ -453,7 +478,6 @@
             margin-bottom: 6px;
         }
 
-        /* Submit confirmation modal */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -539,13 +563,20 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="eos-top">
         <div class="top-brand">
             <span class="eos-badge">EOS</span>
             <div class="top-title">
-                <h1>MLN122 - Kinh tế chính trị Mác - Lênin</h1>
-                <p>Đề Thi: SP26 - C2FE (60 câu)</p>
+                <h1>Đề Thi FE MLN122 - SP26 - C2FE</h1>
+                <p>Hệ thống luyện đề trắc nghiệm (60 câu)</p>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <div class="timer-box">
+                <span class="timer-icon">⏱</span>
+                <span class="timer-label">Thời gian làm:</span>
+                <span class="timer-display" id="elapsedTimer">00:00</span>
             </div>
         </div>
 
@@ -554,7 +585,6 @@
         </button>
     </header>
 
-    <!-- Score Banner in Review Mode -->
     <div class="score-banner" id="scoreBanner">
         <div style="display: flex; align-items: center; gap: 16px;">
             <div class="score-badge" id="scoreBadge">0 / 10</div>
@@ -571,49 +601,39 @@
         </div>
     </div>
 
-    <!-- Main Layout -->
     <div class="eos-layout">
-        <!-- Left Column: Checkbox column for CURRENT question only -->
         <aside class="left-col">
             <div class="q-nav-header">
                 <div class="q-number-title" id="qNumberTitle">Câu 1 / 60</div>
                 <select class="q-jump-select" id="jumpSelect" onchange="jumpToQuestion(parseInt(this.value))">
-                    <!-- Populated dynamically -->
                 </select>
             </div>
 
             <div class="q-type-label" id="qTypeLabel">DẠNG: CHỌN 1 ĐÁP ÁN</div>
 
-            <!-- Vertical Checkbox List for Current Question -->
             <div class="checkbox-group" id="checkboxGroup">
-                <!-- Checkbox rows inserted here -->
             </div>
 
-            <!-- Navigation Buttons -->
             <div class="nav-controls">
                 <button class="btn-nav" id="btnPrev" onclick="navigate(-1)">◀ Câu trước</button>
                 <button class="btn-nav" id="btnNext" onclick="navigate(1)">Câu sau ▶</button>
             </div>
 
-            <!-- Hotkeys Guide -->
             <div class="hotkey-hints">
                 <strong>⌨ Phím tắt tiện lợi:</strong><br>
                 • Ấn <strong>1, 2, 3, 4</strong> (hoặc <strong>A, B, C, D</strong>) để tích chọn nhanh.<br>
-                • Ấn <strong>⬅ / ➡</strong> (mũi tên trái/phải) để chuyển câu.
+                • Ấn <strong>⬅ / ➡</strong> (mũi tên trái/phải) để chuyển câu (tự vòng về câu 1 khi hết câu 60).
             </div>
         </aside>
 
-        <!-- Right Column: Question Image & Explanation -->
         <main class="right-col">
-            <!-- Question Image -->
             <div class="image-card">
                 <img id="questionImage" src="" alt="Đang tải câu hỏi...">
             </div>
 
-            <!-- Review / Explanation (Shown after submission) -->
             <div class="review-card" id="reviewCard">
                 <div class="review-title">
-                    <span>💡 ĐỐI SOÁT KIẾN THỨC MLN122:</span>
+                    <span>💡 ĐÁP ÁN & ĐỐI SOÁT CỘNG ĐỒNG:</span>
                 </div>
                 <div class="review-explanation" id="reviewExplanation"></div>
                 <div class="fu-box">
@@ -624,7 +644,6 @@
         </main>
     </div>
 
-    <!-- Submit Modal -->
     <div class="modal-overlay" id="submitModal">
         <div class="modal-box">
             <h2>XÁC NHẬN NỘP BÀI THI</h2>
@@ -654,15 +673,35 @@
         const QUESTIONS = [{"id": 1, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q001.png", "full_img": "Q001.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "skibidi1231", "A", "Kien01102004", "trong thurong = lupu thong", "trong nong = san xuat"], "vote_summary": "A: 4", "explanation": "Chủ nghĩa trọng nông là hệ thống lý luận kinh tế đầu tiên chuyển trọng tâm nghiên cứu từ lĩnh vực lưu thông (của CNTT) sang lĩnh vực sản xuất (nông nghiệp)."}, {"id": 2, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q002.png", "full_img": "Q002.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a"], "vote_summary": "A: 5", "explanation": "Chủ nghĩa trọng thương (thế kỷ XV - XVII) là hệ thống lý luận kinh tế chính trị đầu tiên bước đầu nghiên cứu về phương thức sản xuất TBCN (chủ yếu trong lưu thông)."}, {"id": 3, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q003.png", "full_img": "Q003.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a"], "vote_summary": "A: 5", "explanation": "Mục đích nghiên cứu ở cấp độ cao nhất của KTCT Mác - Lênin là phát hiện ra các quy luật kinh tế chi phối quan hệ giữa người với người trong sản xuất và trao đổi."}, {"id": 4, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q004.png", "full_img": "Q004.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "A"], "vote_summary": "A: 5", "explanation": "Bộ 'Tư bản' (Das Kapital) là tác phẩm kinh điển vĩ đại nhất, chứa đựng toàn bộ hệ thống lý luận kinh tế chính trị của C.Mác."}, {"id": 5, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q005.png", "full_img": "Q005.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT", "A. Smith dura KTCT- mon khoa hoc co tinh he", "thong"], "vote_summary": "A: 5", "explanation": "Adam Smith với tác phẩm 'Sự giàu có của các quốc gia' (1776) là người đưa KTCT thực sự trở thành một môn khoa học có tính hệ thống."}, {"id": 6, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q006.png", "full_img": "Q006.png", "comments": ["trangggg", "a", "xuanthangmagi", "A", "xuanthangmagi", "A", "skibidi1231", "khoa hoc ki thuat phat trien -. gia tri si dung", "cia hang hoa phong phu va da dang", "trfong", "a"], "vote_summary": "A: 4", "explanation": "Khoa học - kỹ thuật phát triển làm cho con người khám phá ra nhiều thuộc tính mới của tự nhiên, khiến giá trị sử dụng của hàng hóa ngày càng phong phú, đa dạng."}, {"id": 7, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q007.png", "full_img": "Q007.png", "comments": ["xuanthangmagi", "A", "xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "tien te ra doi do nhu cau sx hh va trao doi hh", "-->a", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Tiền tệ ra đời là kết quả lâu dài của quá trình phát triển sản xuất hàng hóa và các hình thái giá trị trong trao đổi hàng hóa."}, {"id": 8, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q008.png", "full_img": "Q008.png", "comments": ["xuanthangmagi", "D", "xuanthangmagi", "d", "trfong", "d", "Aim cuc zang cua FPT 7", "d", "Hat dé", "d"], "vote_summary": "D: 5", "explanation": "Lao động cụ thể là lao động có ích dưới một hình thức nghề nghiệp cụ thể, có mục đích riêng, đối tượng riêng, công cụ và kết quả riêng."}, {"id": 9, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q009.png", "full_img": "Q009.png", "comments": ["xuanthangmagi", "A", "xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "lam phat--> tac dong truc tiép- tieu dung va sx", "-->A", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Trong lưu thông hàng hóa, lạm phát làm đồng tiền mất giá, tác động trực tiếp tiêu cực đến cả quá trình sản xuất và đời sống tiêu dùng của người dân."}, {"id": 10, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q010.png", "full_img": "Q010.png", "comments": ["xuanthangmagi", "A", "xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "tungkhang25", "a"], "vote_summary": "A: 5", "explanation": "Các yếu tố đặc biệt ngày nay (đất đai, chứng khoán, thương hiệu...) có giá trị sử dụng, giá cả và có thể mua bán trao đổi nhưng không trực tiếp do hao phí lao động tạo ra."}, {"id": 11, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q011.png", "full_img": "Q011.png", "comments": ["trfong", "2 thuoc tinh, 2 dieu kien, 2 hinh thc, 3 giai", "doan, 4 nguyen nhan, 5 chirc nang, 5 dac", "diem, 5 nhiem vu", "trfong", "c", "Aim cuc zang cua FPT ↑", "c", "Hat dé", "c", "nguyenhai18052004", "hang hoa strc lao dong dua tren => 2 dieu kien"], "vote_summary": "C: 3", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 3) phù hợp với kiến thức giáo trình MLN122."}, {"id": 12, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q012.png", "full_img": "Q012.png", "comments": ["xuanthangmagi", "D", "xuanthangmagi", "D", "trfong", "d", "Aim cuc zang cua FPT ↑", "d", "tao ra cua cai+ ptr va hoan thien- the luc+ tri", "luc+ tich luy kinh no va ché tao cc sx", "Hat dé", "d"], "vote_summary": "D: 5", "explanation": "Đáp án chuẩn: D. Cộng đồng sinh viên FuOverflow thống nhất cao (D: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 13, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q013.png", "full_img": "Q013.png", "comments": ["xuanthangmagi", "B", "xuanthangmagi", "B", "skibidi1231", "lao dong cu the va lao dong triru turong -> mac", "trfong", "b", "Aim cuc zang cua FPT ↑", "B. Mac-- tinh 2 mat cia ldsx hh --> cu thé+ tripu", "turong"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Cộng đồng sinh viên FuOverflow thống nhất cao (B: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 14, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q014.png", "full_img": "Q014.png", "comments": ["xuanthangmagi", "A", "xuanthangmagi", "a", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. lao dong xh - ket tinh trong hang hoa--> gia", "tri hang hoa", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 15, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q015.png", "full_img": "Q015.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "lao dong gian don voi lao dong phupc tap la 2", "lao dong khac nhau", "trfong", "c", "Aim cuc zang cua FPT ↑", "c", "Hat dé", "c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 16, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q016.png", "full_img": "Q016.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "Khi vang tro thanh vat ngang gia chung co dinh", "de trao doi hang hoa, hinh thai tien te xuat", "hien.", "-->A", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 17, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q017.png", "full_img": "Q017.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "c", "trfong", "c", "Aim cuc zang cua FPT 7", "c", "Hat dé", "c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 18, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q018.png", "full_img": "Q018.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "thang du, nong nghiep lam thue", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. nguon goc- tri thang du + kqua -chiem doat", "lao dong thang dyp- cong nhan nong nghiep lam", "thue"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 19, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q019.png", "full_img": "Q019.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "c", "trfong", "c", "Aim cuc zang cua FPT ↑", "phan chia tu ban = tu ban bat bien+ tup ban kha", "bién--> biet : nguon goc gtri thang dup", "--> C", "Hat dé", "c. nguon goc cia gtri thang dup"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 20, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q020.png", "full_img": "Q020.png", "comments": ["xuanthangmagi", "a", "skibidi1231", "tien te bien thanh tup ban khi surc lao dong tro", "thanh hang hoa", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. tien te bien thanh tup ban- surc lao dong tro", "thanh hang hoa", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 21, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q021.png", "full_img": "Q021.png", "comments": ["xuanthangmagi", "b", "skibidi1231", "b", "trfong", "b", "Aim cuc zang cua FPT ↑", "B. sx tup ban- sx gia tri thang dup", "Hat dé", "b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Cộng đồng sinh viên FuOverflow thống nhất cao (B: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 22, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q022.png", "full_img": "Q022.png", "comments": ["xuanthangmagi", "b", "skibidi1231", "b", "trfong", "b", "Aim cuc zang cua FPT 7", "B.", "Hat dé", "b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Cộng đồng sinh viên FuOverflow thống nhất cao (B: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 23, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q023.png", "full_img": "Q023.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "A.", "doc quyen kinh doanh ruong -- dia to chenh", "lech", "doc quyen tup huu ve ruong dat --> dia to tuyet", "doi", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 24, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q024.png", "full_img": "Q024.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT↑", "A.hang hoa dac biet- hang hoa surc lao dong", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 25, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q025.png", "full_img": "Q025.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "C, khach quan thi khong phai do con nguroi tao", "ra", "khoinguyen2108", "B", "trfong", "b", "Aim cuc zang cua FPT ↑", "khach quan thi kp do con ng tao ra", "--> B. quy luat kinh te co tinh lich sip"], "vote_summary": "B: 2, C: 1", "explanation": "Quy luật kinh tế mang tính khách quan (không phụ thuộc vào ý muốn con người, con người không tự 'đặt ra' được) và mang tính lịch sử (chỉ tồn tại trong điều kiện lịch sử nhất định)."}, {"id": 26, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q026.png", "full_img": "Q026.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "a", "trfong", "a", "Aim cuc zang cua FPT ↑", "tup ban co dinh+ luu dong --> pham tru tup ban", "SX", "-->A", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 27, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q027.png", "full_img": "Q027.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "c", "Aim cuc zang cua FPT ↑", "Ty suat gia tri thang dup m'-→ phan anh trinh do", "boc lot (Trinh do khai thac strc lao dong lam", "thue.)", "Khoi lurong gia tri thang du M -→ phan anh quy", "mo gia tri thang dup thu duoc", "trfong", "c", "Aim cuc zang cua FPT ↑", "khoi lurong gtri thang du- quy mo gtri thang dup-", "tup ban thu dc", "--> C"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 28, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q028.png", "full_img": "Q028.png", "comments": ["skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "Phurong thipc chuyen gtri cia bp tup ban sang", "sp", "--> chia tu ban co dinh va lupu dong", "-->A", "Hat de", "a", "nguyenhai18052004", "phuong thic chuyen gia tri cia cac bo phan tu?", "ban sang san pham"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 3) phù hợp với kiến thức giáo trình MLN122."}, {"id": 29, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q029.png", "full_img": "Q029.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "a", "trfong", "a", "Aim cuc zang cua FPT 7", "A", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 30, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q030.png", "full_img": "Q030.png", "comments": ["cit", "sao k phai la D", "xuanthangmagi", "B", "skibidi1231", "su hinh thanh to chic doc quyen -> tich tu va", "tap trung san xuat o mic do cao", "trfong", "b", "Aim cuc zang cua FPT ↑", "B. tich tu va tap trung sx  mirc do cao --> hinh", "thanh to chipc doc quyen"], "vote_summary": "B: 3, D: 1", "explanation": "Theo V.I.Lênin, tích tụ và tập trung sản xuất phát triển đến trình độ cao là nguyên nhân trực tiếp dẫn tới sự ra đời của các tổ chức độc quyền."}, {"id": 31, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q031.png", "full_img": "Q031.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "to chipc doc da nganh -> doi pho chong doc", "quyen", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. canh tranh gay gat+ doi pho- luat chong doc", "quyen", "--> doc quyen da nganh", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 32, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q032.png", "full_img": "Q032.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A", "Hat dé", "a", "nguyenhai18052004", "xuat khau tu ban nha nuoc => tao moi trurong", "thuan loi cho xuat khau tu ban tup nhan"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 33, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q033.png", "full_img": "Q033.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "nen kinh te tri thpc -> 1 nac thang", "trfong", "c", "Aim cuc zang cua FPT ↑", "c", "Hat dé", "c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 34, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q034.png", "full_img": "Q034.png", "comments": ["Huan Thanh", "dinh huong XHCN -> nhan dan lao dong", "co ché thi trurong -> CNTBDQ", "xuanthangmagi", "A", "do nhu", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 35, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q035.png", "full_img": "Q035.png", "comments": ["xuanthangmagi", "b", "trfong", "b", "Aim cuc zang cua FPT 7", "B", "Hat dé", "b", "nguyenhai18052004", "cac to chic doc quyen"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Cộng đồng sinh viên FuOverflow thống nhất cao (B: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 36, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q036.png", "full_img": "Q036.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. tac dong tich cuc- doc quyen vs nen fkte", "--> tap trung nguon luc ptr nghien cipu + khai", "thac tién bo KHKT", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 37, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q037.png", "full_img": "Q037.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "A", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 38, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q038.png", "full_img": "Q038.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. canh tranh-- dan toi doc quyen", "Hat dé", "a", "nguyenhai18052004", "nguyen nhan dan den doc quyen => do canh", "tranh"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 39, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q039.png", "full_img": "Q039.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "mua co phieu, trai phieu -> dau tu gian tiép", "trfong", "a", "Aim cuc zang cua FPT ↑", "A. mua co phieu+ trai phiesu-- dau tup gian tiép", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 40, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q040.png", "full_img": "Q040.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "bieu hien moi - tich tu va tap trung tur ban -->", "xuat hien cty doc quyen xuyen quoc gia", "-->A", "Hat dé", "a", "nguyenhai18052004", "su xuat hien cia cac cong ty doc quyen xuyen", "quoc gia"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 3) phù hợp với kiến thức giáo trình MLN122."}, {"id": 41, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q041.png", "full_img": "Q041.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "xuat hien doc quyen ->tao ra kha nang va dong", "luc to lon", "trfong", "a", "Aim cuc zang cua FPT ↑", "xuat hien doc quyen --> tao ra kha nang va", "dong lupucj to lon- nghien cupu KHKT", "-->A", "Hat dé", "a"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 3) phù hợp với kiến thức giáo trình MLN122."}, {"id": 42, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q042.png", "full_img": "Q042.png", "comments": ["xuanthangmagi", "D", "trfong", "d", "Aim cuc zang cua FPT 7", "D", "Hat dé", "d", "Asaki0556", "d"], "vote_summary": "D: 5", "explanation": "Đáp án chuẩn: D. Cộng đồng sinh viên FuOverflow thống nhất cao (D: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 43, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q043.png", "full_img": "Q043.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "a", "Hat dé", "a", "nguyenhai18052004", "co the va can thiet si dung"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 44, "type": "single", "options": ["A", "B", "C", "D", "E"], "correct": "E", "question_img": "questions/Q044.png", "full_img": "Q044.png", "comments": ["xuanthangmagi", "E", "trfong", "e", "Aim cuc zang cua FPT 7", "E", "Hat dé", "e", "Asaki0556", "E"], "vote_summary": "", "explanation": "Tính định hướng XHCN của nền KTTT Việt Nam thể hiện toàn diện qua: sự lãnh đạo của Đảng/quản lý Nhà nước, nguyên tắc phân phối theo lao động, xác lập hệ giá trị cốt lõi và phát huy nguồn lực toàn dân (Chọn Tất cả)."}, {"id": 45, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q045.png", "full_img": "Q045.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "nen kinh te nhieu thanh phan - dai hoi 11", "trfong", "a", "Aim cuc zang cua FPT ↑", "A", "Hat dé", "a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 46, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q046.png", "full_img": "Q046.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "a", "do nhu", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "A"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 47, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q047.png", "full_img": "Q047.png", "comments": ["xuanthangmagi", "c", "trfong", "c", "Aim cuc zang cua FPT ↑", "c", "Hat dé", "c", "nguyenhai18052004", "kinh te thi trurong khong the manh o xa hoi", "phong kién"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 48, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q048.png", "full_img": "Q048.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A", "Hat dé", "a", "nguyenhai18052004", "thanh phan kinh te moi xuat hien o nuoc ta =>", "nuoc ngoai"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 49, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q049.png", "full_img": "Q049.png", "comments": ["xuanthangmagi", "A", "do nhu", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "kinh te thi trurong phai dieu tiet-- boi nha nuoc", "-->A", "Dikay", "Thay A cung hop ly nhung ma search tren gg", "hay hoi may con chat no deu noi la C"], "vote_summary": "A: 3, C: 1", "explanation": "Trong nền kinh tế thị trường hiện đại (đặc biệt là KTTT định hướng XHCN), nền kinh tế phải có sự điều tiết của Nhà nước để hạn chế các khuyết tật của thị trường."}, {"id": 50, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q050.png", "full_img": "Q050.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "CHiNH THU'C DUQC NEU RA -> DAI HOI 9", "trfong", "c", "Aim cuc zang cua FPT ↑", "c", "Hat dé", "c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 51, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q051.png", "full_img": "Q051.png", "comments": ["xuanthangmagi", "D", "skibidi1231", "d", "trfong", "d", "Aim cuc zang cua FPT 7", "D", "Hat dé", "d"], "vote_summary": "D: 5", "explanation": "Đáp án chuẩn: D. Cộng đồng sinh viên FuOverflow thống nhất cao (D: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 52, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q052.png", "full_img": "Q052.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT↑", "A", "Hat dé", "a", "nguyenhai18052004", "big data, 3g => cuoc cach mang cong nghiep", "lan thip tup"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 53, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q053.png", "full_img": "Q053.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A", "Hat dé", "a", "nguyenhai18052004", "cach mang thip tu lam mat loi thé => tai nguyen", "thien nhien, nhan cong gia re"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 54, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q054.png", "full_img": "Q054.png", "comments": ["xuanthangmagi", "A", "trfong", "a", "Aim cuc zang cua FPT ↑", "A", "Hat dé", "a", "nguyenhai18052004", "cong nghiep hoa  Anh => cong nghiep det"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 4) phù hợp với kiến thức giáo trình MLN122."}, {"id": 55, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q055.png", "full_img": "Q055.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "thoi qua do len CNXH -> kinh te tong quat", "trfong", "a", "Aim cuc zang cua FPT ↑", "thoi qua do len CNXH---> kinh te tong quat", "-->A", "Hat dé", "a"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 3) phù hợp với kiến thức giáo trình MLN122."}, {"id": 56, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q056.png", "full_img": "Q056.png", "comments": ["xuanthangmagi", "c", "skibidi1231", "c", "trfong", "c", "Aim cuc zang cua FPT↑", "quan he kte - xh nhat dinh --> hinh thirc loi ich", "--> C", "Hat dé", "c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Cộng đồng sinh viên FuOverflow thống nhất cao (C: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 57, "type": "multi", "options": ["A", "B", "C", "D"], "correct": ["A", "B", "D"], "question_img": "questions/Q057.png", "full_img": "Q057.png", "comments": ["xuanthangmagi", "ABD", "skibidi1231", "abd", "trfong", "abd", "Aim cuc zang cua FPT 7", "ABD", "Hat dé", "abd"], "vote_summary": "", "explanation": "Mục tiêu khác biệt của KTTT định hướng XHCN: phát triển LLSX, xây dựng cơ sở vật chất kỹ thuật của CNXH, và thực hiện 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh' (chọn A, B, D). Riêng câu C sai vì kinh tế thị trường duy trì nhiều hình thức sở hữu, không phải công hữu toàn bộ."}, {"id": 58, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q058.png", "full_img": "Q058.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "a", "trfong", "a", "Aim cuc zang cua FPT 7", "A", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}, {"id": 59, "type": "multi", "options": ["A", "B", "C", "D"], "correct": ["A", "B", "C"], "question_img": "questions/Q059.png", "full_img": "Q059.png", "comments": ["skibidi1231", "abc", "trfong", "abc", "Aim cuc zang cua FPT ↑", "ABC", "Hat dé", "abc", "nguyenhai18052004", "moi nguoi deu bi ban tay vo hinh dan toi ket", "qua lam loi cho chinh minh"], "vote_summary": "", "explanation": "Lý thuyết 'bàn tay vô hình' của Adam Smith mô tả cơ chế thị trường tự điều chỉnh cung - cầu, thúc đẩy cá nhân tối đa hóa lợi ích bản thân từ đó mang lại hiệu quả xã hội cao nhất mà không cần chính phủ can thiệp (chọn A, B, C)."}, {"id": 60, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q060.png", "full_img": "Q060.png", "comments": ["xuanthangmagi", "A", "skibidi1231", "A", "trfong", "a", "Aim cuc zang cua FPT 7", "A", "Hat dé", "a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Cộng đồng sinh viên FuOverflow thống nhất cao (A: 5) phù hợp với kiến thức giáo trình MLN122."}];
 
         let currentIndex = 0;
-        let userAnswers = {}; // qid: "A" or ["A", "B"]
+        let userAnswers = {};
         let isSubmitted = false;
-        let reviewFilter = 'all'; // 'all' or 'wrong'
+        let reviewFilter = 'all';
         let wrongIndices = [];
+        let elapsedSeconds = 0;
+        let timerInterval = null;
+
+        function startTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (isSubmitted) return;
+                elapsedSeconds++;
+                renderTimer();
+            }, 1000);
+        }
+
+        function renderTimer() {
+            const mins = Math.floor(elapsedSeconds / 60);
+            const secs = elapsedSeconds % 60;
+            const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+            const el = document.getElementById('elapsedTimer');
+            if (el) el.innerText = str;
+        }
 
         function init() {
             populateJumpSelect();
             loadQuestion(0);
             setupKeyboard();
+            startTimer();
         }
 
         function populateJumpSelect() {
@@ -693,7 +732,6 @@
                 typeLabel.className = 'q-type-label';
             }
 
-            // Render Vertical Checkboxes for THIS question only
             const container = document.getElementById('checkboxGroup');
             container.innerHTML = '';
 
@@ -733,15 +771,13 @@
                 container.appendChild(row);
             });
 
-            // Question Image
             const imgEl = document.getElementById('questionImage');
             if (isSubmitted) {
-                imgEl.src = q.full_img; // Show full screenshot with FuOverflow comments in review
+                imgEl.src = q.full_img;
             } else {
-                imgEl.src = q.question_img; // Show clean question image
+                imgEl.src = q.question_img;
             }
 
-            // Nav buttons
             const btnPrev = document.getElementById('btnPrev');
             const btnNext = document.getElementById('btnNext');
 
@@ -757,7 +793,6 @@
                 btnNext.innerHTML = (currentIndex === QUESTIONS.length - 1) ? 'Về câu 1 ↺' : 'Câu sau ▶';
             }
 
-            // Review card
             const revCard = document.getElementById('reviewCard');
             if (isSubmitted) {
                 revCard.classList.add('visible');
@@ -810,9 +845,9 @@
 
             let next = currentIndex + dir;
             if (next >= QUESTIONS.length) {
-                next = 0; // Đến câu 60 ấn sang phải sẽ vòng về câu 1
+                next = 0;
             } else if (next < 0) {
-                next = QUESTIONS.length - 1; // Ở câu 1 ấn sang trái sẽ vòng về câu 60
+                next = QUESTIONS.length - 1;
             }
             loadQuestion(next);
         }
@@ -828,25 +863,18 @@
                 const q = QUESTIONS[currentIndex];
                 const key = e.key.toUpperCase();
 
-                // Number keys 1-5
                 if (['1', '2', '3', '4', '5'].includes(key)) {
                     const numIdx = parseInt(key) - 1;
                     if (numIdx < q.options.length) {
                         if (!isSubmitted) toggleOption(q.id, q.options[numIdx]);
                     }
-                }
-                // Letter keys A-E
-                else if (['A', 'B', 'C', 'D', 'E'].includes(key)) {
+                } else if (['A', 'B', 'C', 'D', 'E'].includes(key)) {
                     if (q.options.includes(key)) {
                         if (!isSubmitted) toggleOption(q.id, key);
                     }
-                }
-                // Left arrow
-                else if (e.key === 'ArrowLeft') {
+                } else if (e.key === 'ArrowLeft') {
                     navigate(-1);
-                }
-                // Right arrow
-                else if (e.key === 'ArrowRight') {
+                } else if (e.key === 'ArrowRight') {
                     navigate(1);
                 }
             });
@@ -903,9 +931,14 @@
                 }
             });
 
+            if (timerInterval) clearInterval(timerInterval);
+            const spentMin = Math.floor(elapsedSeconds / 60);
+            const spentSec = elapsedSeconds % 60;
+            const timeStr = (spentMin > 0 ? spentMin + ' phút ' : '') + spentSec + ' giây';
+
             const score10 = ((correctCount / QUESTIONS.length) * 10).toFixed(1);
             document.getElementById('scoreBadge').innerText = score10 + ' / 10';
-            document.getElementById('scoreDetail').innerText = 'Đúng: ' + correctCount + '/60 câu (' + Math.round((correctCount/60)*100) + '%) | Số câu sai: ' + wrongIndices.length;
+            document.getElementById('scoreDetail').innerText = 'Đúng: ' + correctCount + '/' + QUESTIONS.length + ' câu (' + Math.round((correctCount/QUESTIONS.length)*100) + '%) | Số câu sai: ' + wrongIndices.length + ' | Thời gian làm: ' + timeStr;
 
             let title = 'KẾT QUẢ BÀI THI: ';
             if (score10 >= 9.0) title += 'XUẤT SẮC 🌟';
@@ -934,7 +967,7 @@
                         loadQuestion(currentIndex);
                     }
                 } else {
-                    alert('Chúc mừng! Bạn đã làm đúng toàn bộ 60 câu!');
+                    alert('Chúc mừng! Bạn đã làm đúng toàn bộ ' + QUESTIONS.length + ' câu!');
                     setReviewFilter('all');
                 }
             } else {
@@ -948,6 +981,9 @@
             isSubmitted = false;
             reviewFilter = 'all';
             wrongIndices = [];
+            elapsedSeconds = 0;
+            renderTimer();
+            startTimer();
             document.getElementById('scoreBanner').classList.remove('visible');
             document.getElementById('btnSubmit').style.display = 'flex';
             loadQuestion(0);
