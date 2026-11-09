@@ -4,6 +4,13 @@ Hệ thống tự động quét ảnh chụp câu hỏi từ các nền tảng (
 
 ---
 
+## 🏆 Tích Hợp Bảng Xếp Hạng Online (Google Sheets API)
+* **Nhập tên định danh**: Khi vào web, người dùng nhập Tên/Nickname một lần duy nhất (tự động lưu vào trình duyệt).
+* **Ghi nhận điểm số tự động**: Sau khi nộp bài, điểm số, thời gian làm và ngày nộp được gửi tự động về Google Sheets của bạn.
+* **Bảng Vàng Vinh Danh (Leaderboard)**: Nút **[🏆 BẢNG XẾP HẠNG]** trên Header cho phép xem Top thí sinh điểm cao nhất kèm huy chương 🥇🥈🥉, lọc theo đề hiện tại hoặc toàn bộ các đề.
+
+---
+
 ## 🌟 2 Chế Độ Luyện Thi Chuyên Biệt
 
 Bộ công cụ cung cấp 2 chế độ học tập tùy chọn theo nhu cầu:

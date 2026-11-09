@@ -281,7 +281,6 @@ def build_practice_html_content(exam_title, quiz_items):
             overflow: hidden;
         }}
 
-        /* Top Header */
         header.eos-top {{
             background: linear-gradient(135deg, var(--eos-navy) 0%, var(--eos-header) 100%);
             color: #ffffff;
@@ -323,7 +322,6 @@ def build_practice_html_content(exam_title, quiz_items):
             color: #94a3b8;
         }}
 
-        /* Live Stats on Header */
         .header-stats {{
             display: flex;
             align-items: center;
@@ -380,6 +378,24 @@ def build_practice_html_content(exam_title, quiz_items):
             color: #ffffff;
         }}
 
+        .btn-bxh {{
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: #ffffff;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }}
+
+        .btn-bxh:hover {{
+            filter: brightness(1.08);
+        }}
+
         .btn-reset {{
             background: #ef4444;
             border-color: #ef4444;
@@ -390,14 +406,23 @@ def build_practice_html_content(exam_title, quiz_items):
             background: #dc2626;
         }}
 
-        /* Main 2-column layout */
+        .user-tag {{
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #e2e8f0;
+            cursor: pointer;
+        }}
+
         .eos-layout {{
             display: flex;
             flex: 1;
             overflow: hidden;
         }}
 
-        /* Left Column */
         .left-col {{
             width: 340px;
             background: #ffffff;
@@ -454,7 +479,6 @@ def build_practice_html_content(exam_title, quiz_items):
             border: 1px solid #fde68a;
         }}
 
-        /* Vertical Checkboxes */
         .checkbox-group {{
             display: flex;
             flex-direction: column;
@@ -522,7 +546,6 @@ def build_practice_html_content(exam_title, quiz_items):
             font-weight: 500;
         }}
 
-        /* Instant Check Feedback States */
         .checkbox-row.correct {{
             background: var(--eos-green-light) !important;
             border-color: var(--eos-green) !important;
@@ -547,7 +570,6 @@ def build_practice_html_content(exam_title, quiz_items):
             color: #fff !important;
         }}
 
-        /* Feedback Alert Banner inside Left Column */
         .feedback-banner {{
             display: none;
             padding: 12px 14px;
@@ -582,10 +604,9 @@ def build_practice_html_content(exam_title, quiz_items):
             display: block;
             background: #fef3c7;
             color: #b45309;
-            border: 2px solid #f59e0b;
+            border: 2px solid var(--eos-gold);
         }}
 
-        /* Primary Action Button (Enter) */
         .btn-enter-action {{
             width: 100%;
             padding: 12px 16px;
@@ -658,7 +679,6 @@ def build_practice_html_content(exam_title, quiz_items):
             color: var(--eos-navy);
         }}
 
-        /* Right Column */
         .right-col {{
             flex: 1;
             background: #f8fafc;
@@ -740,6 +760,186 @@ def build_practice_html_content(exam_title, quiz_items):
             color: #38bdf8;
             margin-bottom: 6px;
         }}
+
+        /* Modals */
+        .modal-overlay {{
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(3px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }}
+
+        .modal-overlay.open {{
+            display: flex;
+        }}
+
+        .modal-box {{
+            background: #ffffff;
+            border-radius: 12px;
+            max-width: 480px;
+            width: 90%;
+            padding: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+        }}
+
+        .name-input {{
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            margin: 14px 0;
+            outline: none;
+        }}
+
+        .name-input:focus {{
+            border-color: var(--eos-blue);
+        }}
+
+        .modal-actions {{
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }}
+
+        .btn-modal {{
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+        }}
+
+        .btn-modal-confirm {{
+            background: #10b981;
+            color: #ffffff;
+        }}
+
+        /* Leaderboard Modal */
+        .modal-leaderboard {{
+            background: #ffffff;
+            border-radius: 14px;
+            max-width: 650px;
+            width: 95%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }}
+
+        .bxh-header {{
+            background: linear-gradient(135deg, var(--eos-navy) 0%, #1e3a5f 100%);
+            color: #ffffff;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }}
+
+        .bxh-title {{
+            font-size: 17px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }}
+
+        .bxh-controls {{
+            padding: 12px 20px;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--eos-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }}
+
+        .bxh-filter-pills {{
+            display: flex;
+            gap: 6px;
+        }}
+
+        .bxh-pill {{
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #475569;
+            cursor: pointer;
+        }}
+
+        .bxh-pill.active {{
+            background: var(--eos-navy);
+            color: #ffffff;
+            border-color: var(--eos-navy);
+        }}
+
+        .bxh-body {{
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+        }}
+
+        .bxh-table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }}
+
+        .bxh-table th {{
+            text-align: left;
+            padding: 8px 10px;
+            font-size: 11px;
+            color: #64748b;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e2e8f0;
+        }}
+
+        .bxh-table td {{
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }}
+
+        .bxh-row-me {{
+            background: #ecfeff !important;
+            font-weight: 700;
+        }}
+
+        .rank-badge {{
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 13px;
+            background: #f1f5f9;
+            color: #475569;
+        }}
+
+        .rank-badge.top-1 {{ background: #fef3c7; color: #b45309; font-size: 15px; }}
+        .rank-badge.top-2 {{ background: #f1f5f9; color: #475569; font-size: 14px; }}
+        .rank-badge.top-3 {{ background: #ffedd5; color: #c2410c; font-size: 14px; }}
+
+        .score-pill {{
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }}
     </style>
 </head>
 <body>
@@ -754,6 +954,9 @@ def build_practice_html_content(exam_title, quiz_items):
         </div>
 
         <div class="header-stats">
+            <div class="user-tag" onclick="promptChangeName()" title="Click để đổi tên">
+                <span>👤</span> <span id="studentNameDisplay">Thí sinh</span>
+            </div>
             <div class="stat-pill" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
                 ⏱ Thời gian: <span id="elapsedTimer" style="font-family: monospace; font-size: 14px; font-weight: 800; margin-left: 3px;">00:00</span>
             </div>
@@ -763,6 +966,7 @@ def build_practice_html_content(exam_title, quiz_items):
         </div>
 
         <div class="header-actions">
+            <button class="btn-bxh" onclick="openLeaderboard()">🏆 BXH</button>
             <button class="btn-top active" id="btnFilterAll" onclick="setFilterMode('all')">Tất cả ({len(quiz_items)})</button>
             <button class="btn-top" id="btnFilterWrong" onclick="setFilterMode('wrong')">Câu làm SAI (<span id="wrongCountBtn">0</span>)</button>
             <button class="btn-top" onclick="retryCurrentQuestion()" title="Làm lại câu đang mở">↺ Làm lại câu này</button>
@@ -798,8 +1002,8 @@ def build_practice_html_content(exam_title, quiz_items):
                 <strong>⌨ Cách dùng siêu tốc:</strong><br>
                 1. Ấn <strong>1, 2, 3, 4</strong> (hoặc <strong>A, B, C, D</strong>) để chọn.<br>
                 2. Ấn <strong>Enter</strong> để kiểm tra:<br>
-                &nbsp;&nbsp;• <span style="color:#16a34a;font-weight:700;">Đúng (Xanh)</span>: Tự động nhảy sang câu kế.<br>
-                &nbsp;&nbsp;• <span style="color:#dc2626;font-weight:700;">Sai (Đỏ)</span>: Hiện đáp án & đối chiếu, ấn <strong>Enter</strong> hoặc <strong>➡</strong> để qua câu tiếp.
+                &nbsp;&nbsp;• <span style="color:#16a34a;font-weight:700;">Đúng</span>: Tự động nhảy sang câu kế.<br>
+                &nbsp;&nbsp;• <span style="color:#dc2626;font-weight:700;">Sai</span>: Hiện đáp án đối chiếu, ấn <strong>Enter</strong> hoặc <strong>➡</strong> để tiếp tục.
             </div>
         </aside>
 
@@ -821,16 +1025,93 @@ def build_practice_html_content(exam_title, quiz_items):
         </main>
     </div>
 
+    <!-- Name Modal -->
+    <div class="modal-overlay" id="nameModal">
+        <div class="modal-box">
+            <div style="font-size: 32px; margin-bottom: 8px;">🎓</div>
+            <h2>CHÀO MỪNG BẠN ĐẾN VỚI PHÒNG THI</h2>
+            <p style="font-size: 13px; color: #64748b;">Nhập Tên hoặc Nickname để lưu danh vào Bảng Vàng Vinh Danh:</p>
+            <input type="text" class="name-input" id="nameInput" placeholder="Ví dụ: Hoàng Long, Minh DepBo..." maxlength="30" onkeydown="if(event.key==='Enter') saveStudentName()">
+            <div class="modal-actions">
+                <button class="btn-modal btn-modal-confirm" onclick="saveStudentName()" style="width: 100%; padding: 12px;">BẮT ĐẦU LUYỆN TẬP 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div class="modal-overlay" id="bxhModal">
+        <div class="modal-leaderboard">
+            <div class="bxh-header">
+                <div class="bxh-title">
+                    <span>🏆</span> BẢNG VÀNG VINH DANH (LEADERBOARD)
+                </div>
+                <button onclick="closeLeaderboard()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">✕</button>
+            </div>
+
+            <div class="bxh-controls">
+                <div class="bxh-filter-pills">
+                    <button class="bxh-pill active" id="pillCurrentExam" onclick="switchBxhTab('current')">Đề này</button>
+                    <button class="bxh-pill" id="pillAllExams" onclick="switchBxhTab('all')">Tất cả đề</button>
+                </div>
+                <button onclick="loadLeaderboardData()" style="padding: 4px 10px; font-size: 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer;">↺ Làm mới</button>
+            </div>
+
+            <div class="bxh-body" id="bxhBody">
+                <div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const QUESTIONS = {json_data_str};
+        const EXAM_TITLE = "{exam_title}";
+        const LEADERBOARD_API = "https://script.google.com/macros/s/AKfycbytIo9ic_IHbV-x1_OELhShgRSXMLnFbu2HoEakLGcUE-y3_Os8RlnUw5QbXbFXuQKsbA/exec";
 
         let currentIndex = 0;
-        let userAnswers = {{}};     // qid -> "A" or ["A", "B"]
-        let checkedResults = {{}};  // qid -> {{ isRight: true/false }}
-        let filterMode = 'all';     // 'all' or 'wrong'
+        let userAnswers = {{}};
+        let checkedResults = {{}};
+        let filterMode = 'all';
         let autoNextTimer = null;
         let elapsedSeconds = 0;
         let timerInterval = null;
+        let currentStudentName = localStorage.getItem('eos_student_name') || '';
+        let bxhTab = 'current';
+
+        function init() {{
+            populateJumpSelect();
+            loadQuestion(0);
+            setupKeyboard();
+            updateHeaderStats();
+            checkStudentName();
+            startTimer();
+        }}
+
+        function checkStudentName() {{
+            if (currentStudentName) {{
+                document.getElementById('studentNameDisplay').innerText = currentStudentName;
+            }} else {{
+                document.getElementById('nameModal').classList.add('open');
+                setTimeout(() => document.getElementById('nameInput').focus(), 150);
+            }}
+        }}
+
+        function saveStudentName() {{
+            const val = document.getElementById('nameInput').value.trim();
+            if (!val) {{
+                alert('Vui lòng nhập tên của bạn nhé!');
+                return;
+            }}
+            currentStudentName = val;
+            localStorage.setItem('eos_student_name', val);
+            document.getElementById('studentNameDisplay').innerText = val;
+            document.getElementById('nameModal').classList.remove('open');
+        }}
+
+        function promptChangeName() {{
+            document.getElementById('nameInput').value = currentStudentName;
+            document.getElementById('nameModal').classList.add('open');
+            setTimeout(() => document.getElementById('nameInput').focus(), 150);
+        }}
 
         function startTimer() {{
             if (timerInterval) clearInterval(timerInterval);
@@ -846,14 +1127,6 @@ def build_practice_html_content(exam_title, quiz_items):
             const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
             const el = document.getElementById('elapsedTimer');
             if (el) el.innerText = str;
-        }}
-
-        function init() {{
-            populateJumpSelect();
-            loadQuestion(0);
-            setupKeyboard();
-            updateHeaderStats();
-            startTimer();
         }}
 
         function clearAutoTimer() {{
@@ -888,7 +1161,6 @@ def build_practice_html_content(exam_title, quiz_items):
             document.getElementById('statProgress').innerText = (cCount + wCount) + '/' + QUESTIONS.length;
             document.getElementById('wrongCountBtn').innerText = wCount;
 
-            // Update jumpSelect symbols
             const sel = document.getElementById('jumpSelect');
             Array.from(sel.options).forEach((opt, idx) => {{
                 const q = QUESTIONS[idx];
@@ -897,6 +1169,106 @@ def build_practice_html_content(exam_title, quiz_items):
                 if (res) prefix = res.isRight ? '✓ ' : '✕ ';
                 opt.innerText = prefix + 'Câu ' + q.id;
             }});
+
+            // Tự động gửi kết quả lên Sheet khi hoàn thành hết các câu
+            if ((cCount + wCount) === QUESTIONS.length && !window.scoreSubmitted) {{
+                window.scoreSubmitted = true;
+                const score10 = ((cCount / QUESTIONS.length) * 10).toFixed(1);
+                const spentMin = Math.floor(elapsedSeconds / 60);
+                const spentSec = elapsedSeconds % 60;
+                const timeStr = (spentMin > 0 ? spentMin + ' phút ' : '') + spentSec + ' giây';
+                submitScoreToSheet(score10, cCount + '/' + QUESTIONS.length, timeStr, elapsedSeconds);
+            }}
+        }}
+
+        function submitScoreToSheet(score, correctStr, timeStr, sec) {{
+            const name = currentStudentName || 'Ẩn danh';
+            const payload = {{
+                name: name,
+                exam: EXAM_TITLE,
+                score: parseFloat(score),
+                correct: correctStr,
+                duration: timeStr,
+                durationSeconds: sec
+            }};
+
+            try {{
+                fetch(LEADERBOARD_API, {{
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+                    body: JSON.stringify(payload)
+                }});
+            }} catch (e) {{
+                console.warn('Lỗi gửi điểm:', e);
+            }}
+        }}
+
+        function openLeaderboard() {{
+            document.getElementById('bxhModal').classList.add('open');
+            loadLeaderboardData();
+        }}
+
+        function closeLeaderboard() {{
+            document.getElementById('bxhModal').classList.remove('open');
+        }}
+
+        function switchBxhTab(tab) {{
+            bxhTab = tab;
+            document.getElementById('pillCurrentExam').className = 'bxh-pill' + (tab === 'current' ? ' active' : '');
+            document.getElementById('pillAllExams').className = 'bxh-pill' + (tab === 'all' ? ' active' : '');
+            loadLeaderboardData();
+        }}
+
+        async function loadLeaderboardData() {{
+            const container = document.getElementById('bxhBody');
+            container.innerHTML = '<div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>';
+
+            try {{
+                const examParam = (bxhTab === 'current') ? encodeURIComponent(EXAM_TITLE) : '';
+                const url = LEADERBOARD_API + (examParam ? ('?exam=' + examParam) : '');
+                const res = await fetch(url);
+                const list = await res.json();
+
+                if (!list || list.length === 0) {{
+                    container.innerHTML = '<div style="text-align: center; padding: 40px; color: #64748b;">Chưa có ai nộp bài cho đề này. Hãy là người đầu tiên lên đỉnh bảng vàng! 🌟</div>';
+                    return;
+                }}
+
+                let html = '<table class="bxh-table"><thead><tr>' +
+                    '<th style="width: 50px;">Hạng</th>' +
+                    '<th>Thí sinh</th>' +
+                    (bxhTab === 'all' ? '<th>Đề thi</th>' : '') +
+                    '<th>Điểm số</th>' +
+                    '<th>Thời gian</th>' +
+                    '<th>Ngày nộp</th>' +
+                    '</tr></thead><tbody>';
+
+                list.forEach((item, idx) => {{
+                    const rank = idx + 1;
+                    let rankBadge = '<span class="rank-badge">' + rank + '</span>';
+                    if (rank === 1) rankBadge = '<span class="rank-badge top-1">🥇</span>';
+                    else if (rank === 2) rankBadge = '<span class="rank-badge top-2">🥈</span>';
+                    else if (rank === 3) rankBadge = '<span class="rank-badge top-3">🥉</span>';
+
+                    const isMe = (currentStudentName && item.name && item.name.toLowerCase() === currentStudentName.toLowerCase());
+                    const rowClass = isMe ? ' class="bxh-row-me"' : '';
+
+                    html += '<tr' + rowClass + '>' +
+                        '<td>' + rankBadge + '</td>' +
+                        '<td>' + item.name + (isMe ? ' <span style="font-size:10px; color:#0284c7;">(Bạn)</span>' : '') + '</td>' +
+                        (bxhTab === 'all' ? '<td style="font-size:11px; color:#64748b;">' + (item.exam || '') + '</td>' : '') +
+                        '<td><span class="score-pill">' + item.score + ' đ</span></td>' +
+                        '<td>' + (item.duration || '') + '</td>' +
+                        '<td style="font-size: 11px; color: #94a3b8;">' + (item.time || '') + '</td>' +
+                        '</tr>';
+                }});
+
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            }} catch (err) {{
+                container.innerHTML = '<div style="text-align: center; padding: 30px; color: #dc2626;">Lỗi kết nối tới Bảng Xếp Hạng. Vui lòng thử lại sau!</div>';
+            }}
         }}
 
         function populateJumpSelect() {{
@@ -975,7 +1347,6 @@ def build_practice_html_content(exam_title, quiz_items):
                 container.appendChild(row);
             }});
 
-            // Feedback Banner & Enter Button
             const fb = document.getElementById('feedbackBanner');
             const btnEnter = document.getElementById('btnEnterAction');
             const imgEl = document.getElementById('questionImage');
@@ -1017,7 +1388,6 @@ def build_practice_html_content(exam_title, quiz_items):
                 btnEnter.innerHTML = '<span>↵</span> KIỂM TRA ĐÁP ÁN (ENTER)';
             }}
 
-            // Nav buttons
             const btnPrev = document.getElementById('btnPrev');
             const btnNext = document.getElementById('btnNext');
             const wrongIndices = getWrongIndices();
@@ -1063,14 +1433,12 @@ def build_practice_html_content(exam_title, quiz_items):
         function handleEnterAction() {{
             const q = QUESTIONS[currentIndex];
 
-            // Nếu câu này đã được kiểm tra rồi -> Ấn Enter sẽ nhảy sang câu tiếp theo
             if (checkedResults[q.id]) {{
                 clearAutoTimer();
                 navigate(1);
                 return;
             }}
 
-            // Kiểm tra xem user đã chọn đáp án chưa
             const uAns = userAnswers[q.id];
             const hasSelection = uAns && (Array.isArray(uAns) ? uAns.length > 0 : true);
             if (!hasSelection) {{
@@ -1080,7 +1448,6 @@ def build_practice_html_content(exam_title, quiz_items):
                 return;
             }}
 
-            // Chấm điểm câu hiện tại
             let isRight = false;
             if (q.type === 'multi') {{
                 if (Array.isArray(uAns) && Array.isArray(q.correct)) {{
@@ -1177,6 +1544,7 @@ def build_practice_html_content(exam_title, quiz_items):
             elapsedSeconds = 0;
             renderTimer();
             startTimer();
+            window.scoreSubmitted = false;
             document.getElementById('btnFilterAll').className = 'btn-top active';
             document.getElementById('btnFilterWrong').className = 'btn-top';
             updateHeaderStats();
@@ -1185,6 +1553,9 @@ def build_practice_html_content(exam_title, quiz_items):
 
         function setupKeyboard() {{
             window.addEventListener('keydown', (e) => {{
+                if (document.getElementById('nameModal').classList.contains('open') ||
+                    document.getElementById('bxhModal').classList.contains('open')) return;
+
                 const q = QUESTIONS[currentIndex];
                 const key = e.key.toUpperCase();
 
@@ -1216,6 +1587,7 @@ def build_practice_html_content(exam_title, quiz_items):
     </script>
 </body>
 </html>'''
+
 
 
 def process_practice_folder(exam_dir, ocr=None):

@@ -274,6 +274,7 @@ def build_html_content(exam_title, quiz_items):
             --eos-green-light: #dcfce7;
             --eos-red: #dc2626;
             --eos-red-light: #fee2e2;
+            --eos-gold: #f59e0b;
             --eos-text: #1e293b;
             --eos-border: #cbd5e1;
         }}
@@ -335,6 +336,7 @@ def build_html_content(exam_title, quiz_items):
         .header-center {{
             display: flex;
             align-items: center;
+            gap: 14px;
         }}
 
         .timer-box {{
@@ -368,11 +370,57 @@ def build_html_content(exam_title, quiz_items):
             letter-spacing: 1px;
         }}
 
+        .user-tag {{
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }}
+
+        .user-tag:hover {{
+            background: rgba(255,255,255,0.15);
+        }}
+
+        .header-actions {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }}
+
+        .btn-bxh {{
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+        }}
+
+        .btn-bxh:hover {{
+            transform: translateY(-1px);
+            filter: brightness(1.08);
+        }}
+
         .btn-submit {{
             background: #10b981;
             color: #ffffff;
             border: none;
-            padding: 8px 24px;
+            padding: 8px 22px;
             border-radius: 6px;
             font-weight: 700;
             font-size: 13px;
@@ -397,6 +445,8 @@ def build_html_content(exam_title, quiz_items):
             justify-content: space-between;
             align-items: center;
             user-select: none;
+            flex-wrap: wrap;
+            gap: 12px;
         }}
 
         .score-banner.visible {{
@@ -423,14 +473,14 @@ def build_html_content(exam_title, quiz_items):
             color: #94a3b8;
         }}
 
-        .score-filter-group {{
+        .score-actions {{
             display: flex;
             gap: 8px;
             align-items: center;
         }}
 
         .btn-filter-review {{
-            padding: 6px 14px;
+            padding: 7px 14px;
             font-size: 12px;
             font-weight: 700;
             border-radius: 6px;
@@ -450,12 +500,11 @@ def build_html_content(exam_title, quiz_items):
             background: #3b82f6;
             color: #fff;
             border: none;
-            padding: 8px 18px;
+            padding: 7px 16px;
             border-radius: 6px;
             font-weight: 700;
             font-size: 12px;
             cursor: pointer;
-            margin-left: 12px;
         }}
 
         .btn-retake:hover {{
@@ -640,11 +689,6 @@ def build_html_content(exam_title, quiz_items):
             border-color: #94a3b8;
         }}
 
-        .btn-nav:disabled {{
-            opacity: 0.4;
-            cursor: not-allowed;
-        }}
-
         .hotkey-hints {{
             background: #f8fafc;
             border: 1px dashed #cbd5e1;
@@ -736,12 +780,13 @@ def build_html_content(exam_title, quiz_items):
             margin-bottom: 6px;
         }}
 
+        /* Modals */
         .modal-overlay {{
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(2px);
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(3px);
             z-index: 1000;
             align-items: center;
             justify-content: center;
@@ -754,7 +799,7 @@ def build_html_content(exam_title, quiz_items):
         .modal-box {{
             background: #ffffff;
             border-radius: 12px;
-            max-width: 460px;
+            max-width: 480px;
             width: 90%;
             padding: 24px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -764,7 +809,7 @@ def build_html_content(exam_title, quiz_items):
         .modal-box h2 {{
             font-size: 18px;
             color: var(--eos-navy);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }}
 
         .modal-stats {{
@@ -817,6 +862,142 @@ def build_html_content(exam_title, quiz_items):
             background: #10b981;
             color: #ffffff;
         }}
+
+        /* Name Prompt Input */
+        .name-input {{
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            margin: 14px 0;
+            outline: none;
+            transition: all 0.2s;
+        }}
+
+        .name-input:focus {{
+            border-color: var(--eos-blue);
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }}
+
+        /* Leaderboard Modal */
+        .modal-leaderboard {{
+            background: #ffffff;
+            border-radius: 14px;
+            max-width: 650px;
+            width: 95%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }}
+
+        .bxh-header {{
+            background: linear-gradient(135deg, var(--eos-navy) 0%, #1e3a5f 100%);
+            color: #ffffff;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }}
+
+        .bxh-title {{
+            font-size: 17px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }}
+
+        .bxh-controls {{
+            padding: 12px 20px;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--eos-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }}
+
+        .bxh-filter-pills {{
+            display: flex;
+            gap: 6px;
+        }}
+
+        .bxh-pill {{
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #475569;
+            cursor: pointer;
+        }}
+
+        .bxh-pill.active {{
+            background: var(--eos-navy);
+            color: #ffffff;
+            border-color: var(--eos-navy);
+        }}
+
+        .bxh-body {{
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+        }}
+
+        .bxh-table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }}
+
+        .bxh-table th {{
+            text-align: left;
+            padding: 8px 10px;
+            font-size: 11px;
+            color: #64748b;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e2e8f0;
+        }}
+
+        .bxh-table td {{
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }}
+
+        .bxh-row-me {{
+            background: #ecfeff !important;
+            font-weight: 700;
+        }}
+
+        .rank-badge {{
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 13px;
+            background: #f1f5f9;
+            color: #475569;
+        }}
+
+        .rank-badge.top-1 {{ background: #fef3c7; color: #b45309; font-size: 15px; }}
+        .rank-badge.top-2 {{ background: #f1f5f9; color: #475569; font-size: 14px; }}
+        .rank-badge.top-3 {{ background: #ffedd5; color: #c2410c; font-size: 14px; }}
+
+        .score-pill {{
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }}
     </style>
 </head>
 <body>
@@ -831,6 +1012,12 @@ def build_html_content(exam_title, quiz_items):
         </div>
 
         <div class="header-center">
+            <div class="user-tag" onclick="promptChangeName()" title="Click để đổi tên hiển thị">
+                <span>👤</span>
+                <span id="studentNameDisplay">Thí sinh</span>
+                <span style="font-size: 10px; opacity: 0.6;">(✏ Đổi)</span>
+            </div>
+
             <div class="timer-box">
                 <span class="timer-icon">⏱</span>
                 <span class="timer-label">Thời gian làm:</span>
@@ -838,9 +1025,14 @@ def build_html_content(exam_title, quiz_items):
             </div>
         </div>
 
-        <button class="btn-submit" id="btnSubmit" onclick="openSubmitModal()">
-            <span>✓</span> NỘP BÀI
-        </button>
+        <div class="header-actions">
+            <button class="btn-bxh" onclick="openLeaderboard()">
+                <span>🏆</span> BẢNG XẾP HẠNG
+            </button>
+            <button class="btn-submit" id="btnSubmit" onclick="openSubmitModal()">
+                <span>✓</span> NỘP BÀI
+            </button>
+        </div>
     </header>
 
     <div class="score-banner" id="scoreBanner">
@@ -852,9 +1044,10 @@ def build_html_content(exam_title, quiz_items):
             </div>
         </div>
 
-        <div class="score-filter-group">
+        <div class="score-actions">
             <button class="btn-filter-review active" id="filterAll" onclick="setReviewFilter('all')">Tất cả ({len(quiz_items)})</button>
             <button class="btn-filter-review" id="filterWrong" onclick="setReviewFilter('wrong')">Chỉ câu SAI</button>
+            <button class="btn-bxh" onclick="openLeaderboard()" style="padding: 7px 14px;">🏆 XEM BXH</button>
             <button class="btn-retake" onclick="restartQuiz()">↺ LÀM LẠI</button>
         </div>
     </div>
@@ -880,7 +1073,7 @@ def build_html_content(exam_title, quiz_items):
             <div class="hotkey-hints">
                 <strong>⌨ Phím tắt tiện lợi:</strong><br>
                 • Ấn <strong>1, 2, 3, 4</strong> (hoặc <strong>A, B, C, D</strong>) để tích chọn nhanh.<br>
-                • Ấn <strong>⬅ / ➡</strong> (mũi tên trái/phải) để chuyển câu (tự vòng về câu 1 khi hết câu 60).
+                • Ấn <strong>⬅ / ➡</strong> để chuyển câu (tự vòng lặp câu 60 ➡ 1).
             </div>
         </aside>
 
@@ -902,10 +1095,11 @@ def build_html_content(exam_title, quiz_items):
         </main>
     </div>
 
+    <!-- Submit Modal -->
     <div class="modal-overlay" id="submitModal">
         <div class="modal-box">
             <h2>XÁC NHẬN NỘP BÀI THI</h2>
-            <p style="font-size: 13px; color: #64748b;">Bạn có muốn kết thúc bài làm và xem điểm số, lời giải chi tiết?</p>
+            <p style="font-size: 13px; color: #64748b;">Điểm số và thời gian làm bài sẽ được tự động ghi nhận vào Bảng Xếp Hạng.</p>
 
             <div class="modal-stats">
                 <div class="modal-stat-item">
@@ -927,8 +1121,47 @@ def build_html_content(exam_title, quiz_items):
         </div>
     </div>
 
+    <!-- Name Prompt Modal -->
+    <div class="modal-overlay" id="nameModal">
+        <div class="modal-box">
+            <div style="font-size: 32px; margin-bottom: 8px;">🎓</div>
+            <h2>CHÀO MỪNG BẠN ĐẾN VỚI PHÒNG THI</h2>
+            <p style="font-size: 13px; color: #64748b;">Nhập Tên hoặc Nickname để lưu danh vào Bảng Vàng Vinh Danh:</p>
+            <input type="text" class="name-input" id="nameInput" placeholder="Ví dụ: Hoàng Long, Minh DepBo..." maxlength="30" onkeydown="if(event.key==='Enter') saveStudentName()">
+            <div class="modal-actions">
+                <button class="btn-modal btn-modal-confirm" onclick="saveStudentName()" style="width: 100%; padding: 12px;">BẮT ĐẦU LÀM BÀI 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div class="modal-overlay" id="bxhModal">
+        <div class="modal-leaderboard">
+            <div class="bxh-header">
+                <div class="bxh-title">
+                    <span>🏆</span> BẢNG VÀNG VINH DANH (LEADERBOARD)
+                </div>
+                <button onclick="closeLeaderboard()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">✕</button>
+            </div>
+
+            <div class="bxh-controls">
+                <div class="bxh-filter-pills">
+                    <button class="bxh-pill active" id="pillCurrentExam" onclick="switchBxhTab('current')">Đề này</button>
+                    <button class="bxh-pill" id="pillAllExams" onclick="switchBxhTab('all')">Tất cả đề</button>
+                </div>
+                <button onclick="loadLeaderboardData()" style="padding: 4px 10px; font-size: 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer;">↺ Làm mới</button>
+            </div>
+
+            <div class="bxh-body" id="bxhBody">
+                <div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const QUESTIONS = {json_data_str};
+        const EXAM_TITLE = "{exam_title}";
+        const LEADERBOARD_API = "https://script.google.com/macros/s/AKfycbytIo9ic_IHbV-x1_OELhShgRSXMLnFbu2HoEakLGcUE-y3_Os8RlnUw5QbXbFXuQKsbA/exec";
 
         let currentIndex = 0;
         let userAnswers = {{}};
@@ -937,6 +1170,43 @@ def build_html_content(exam_title, quiz_items):
         let wrongIndices = [];
         let elapsedSeconds = 0;
         let timerInterval = null;
+        let currentStudentName = localStorage.getItem('eos_student_name') || '';
+        let bxhTab = 'current';
+
+        function init() {{
+            populateJumpSelect();
+            loadQuestion(0);
+            setupKeyboard();
+            checkStudentName();
+            startTimer();
+        }}
+
+        function checkStudentName() {{
+            if (currentStudentName) {{
+                document.getElementById('studentNameDisplay').innerText = currentStudentName;
+            }} else {{
+                document.getElementById('nameModal').classList.add('open');
+                setTimeout(() => document.getElementById('nameInput').focus(), 150);
+            }}
+        }}
+
+        function saveStudentName() {{
+            const val = document.getElementById('nameInput').value.trim();
+            if (!val) {{
+                alert('Vui lòng nhập tên của bạn nhé!');
+                return;
+            }}
+            currentStudentName = val;
+            localStorage.setItem('eos_student_name', val);
+            document.getElementById('studentNameDisplay').innerText = val;
+            document.getElementById('nameModal').classList.remove('open');
+        }}
+
+        function promptChangeName() {{
+            document.getElementById('nameInput').value = currentStudentName;
+            document.getElementById('nameModal').classList.add('open');
+            setTimeout(() => document.getElementById('nameInput').focus(), 150);
+        }}
 
         function startTimer() {{
             if (timerInterval) clearInterval(timerInterval);
@@ -953,13 +1223,6 @@ def build_html_content(exam_title, quiz_items):
             const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
             const el = document.getElementById('elapsedTimer');
             if (el) el.innerText = str;
-        }}
-
-        function init() {{
-            populateJumpSelect();
-            loadQuestion(0);
-            setupKeyboard();
-            startTimer();
         }}
 
         function populateJumpSelect() {{
@@ -1116,7 +1379,9 @@ def build_html_content(exam_title, quiz_items):
 
         function setupKeyboard() {{
             window.addEventListener('keydown', (e) => {{
-                if (document.getElementById('submitModal').classList.contains('open')) return;
+                if (document.getElementById('submitModal').classList.contains('open') ||
+                    document.getElementById('nameModal').classList.contains('open') ||
+                    document.getElementById('bxhModal').classList.contains('open')) return;
 
                 const q = QUESTIONS[currentIndex];
                 const key = e.key.toUpperCase();
@@ -1166,6 +1431,7 @@ def build_html_content(exam_title, quiz_items):
         function confirmSubmit() {{
             isSubmitted = true;
             closeSubmitModal();
+            if (timerInterval) clearInterval(timerInterval);
 
             let correctCount = 0;
             wrongIndices = [];
@@ -1189,12 +1455,11 @@ def build_html_content(exam_title, quiz_items):
                 }}
             }});
 
-            if (timerInterval) clearInterval(timerInterval);
             const spentMin = Math.floor(elapsedSeconds / 60);
             const spentSec = elapsedSeconds % 60;
             const timeStr = (spentMin > 0 ? spentMin + ' phút ' : '') + spentSec + ' giây';
-
             const score10 = ((correctCount / QUESTIONS.length) * 10).toFixed(1);
+
             document.getElementById('scoreBadge').innerText = score10 + ' / 10';
             document.getElementById('scoreDetail').innerText = 'Đúng: ' + correctCount + '/' + QUESTIONS.length + ' câu (' + Math.round((correctCount/QUESTIONS.length)*100) + '%) | Số câu sai: ' + wrongIndices.length + ' | Thời gian làm: ' + timeStr;
 
@@ -1210,6 +1475,99 @@ def build_html_content(exam_title, quiz_items):
             document.getElementById('btnSubmit').style.display = 'none';
 
             loadQuestion(currentIndex);
+
+            // Gửi điểm lên Google Sheet qua Web API
+            submitScoreToSheet(score10, correctCount + '/' + QUESTIONS.length, timeStr, elapsedSeconds);
+        }}
+
+        function submitScoreToSheet(score, correctStr, timeStr, sec) {{
+            const name = currentStudentName || 'Ẩn danh';
+            const payload = {{
+                name: name,
+                exam: EXAM_TITLE,
+                score: parseFloat(score),
+                correct: correctStr,
+                duration: timeStr,
+                durationSeconds: sec
+            }};
+
+            try {{
+                fetch(LEADERBOARD_API, {{
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+                    body: JSON.stringify(payload)
+                }});
+            }} catch (e) {{
+                console.warn('Lỗi gửi điểm:', e);
+            }}
+        }}
+
+        function openLeaderboard() {{
+            document.getElementById('bxhModal').classList.add('open');
+            loadLeaderboardData();
+        }}
+
+        function closeLeaderboard() {{
+            document.getElementById('bxhModal').classList.remove('open');
+        }}
+
+        function switchBxhTab(tab) {{
+            bxhTab = tab;
+            document.getElementById('pillCurrentExam').className = 'bxh-pill' + (tab === 'current' ? ' active' : '');
+            document.getElementById('pillAllExams').className = 'bxh-pill' + (tab === 'all' ? ' active' : '');
+            loadLeaderboardData();
+        }}
+
+        async function loadLeaderboardData() {{
+            const container = document.getElementById('bxhBody');
+            container.innerHTML = '<div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>';
+
+            try {{
+                const examParam = (bxhTab === 'current') ? encodeURIComponent(EXAM_TITLE) : '';
+                const url = LEADERBOARD_API + (examParam ? ('?exam=' + examParam) : '');
+                const res = await fetch(url);
+                const list = await res.json();
+
+                if (!list || list.length === 0) {{
+                    container.innerHTML = '<div style="text-align: center; padding: 40px; color: #64748b;">Chưa có ai nộp bài cho đề này. Hãy là người đầu tiên lên đỉnh bảng vàng! 🌟</div>';
+                    return;
+                }}
+
+                let html = '<table class="bxh-table"><thead><tr>' +
+                    '<th style="width: 50px;">Hạng</th>' +
+                    '<th>Thí sinh</th>' +
+                    (bxhTab === 'all' ? '<th>Đề thi</th>' : '') +
+                    '<th>Điểm số</th>' +
+                    '<th>Thời gian</th>' +
+                    '<th>Ngày nộp</th>' +
+                    '</tr></thead><tbody>';
+
+                list.forEach((item, idx) => {{
+                    const rank = idx + 1;
+                    let rankBadge = '<span class="rank-badge">' + rank + '</span>';
+                    if (rank === 1) rankBadge = '<span class="rank-badge top-1">🥇</span>';
+                    else if (rank === 2) rankBadge = '<span class="rank-badge top-2">🥈</span>';
+                    else if (rank === 3) rankBadge = '<span class="rank-badge top-3">🥉</span>';
+
+                    const isMe = (currentStudentName && item.name && item.name.toLowerCase() === currentStudentName.toLowerCase());
+                    const rowClass = isMe ? ' class="bxh-row-me"' : '';
+
+                    html += '<tr' + rowClass + '>' +
+                        '<td>' + rankBadge + '</td>' +
+                        '<td>' + item.name + (isMe ? ' <span style="font-size:10px; color:#0284c7;">(Bạn)</span>' : '') + '</td>' +
+                        (bxhTab === 'all' ? '<td style="font-size:11px; color:#64748b;">' + (item.exam || '') + '</td>' : '') +
+                        '<td><span class="score-pill">' + item.score + ' đ</span></td>' +
+                        '<td>' + (item.duration || '') + '</td>' +
+                        '<td style="font-size: 11px; color: #94a3b8;">' + (item.time || '') + '</td>' +
+                        '</tr>';
+                }});
+
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            }} catch (err) {{
+                container.innerHTML = '<div style="text-align: center; padding: 30px; color: #dc2626;">Lỗi kết nối tới Bảng Xếp Hạng. Vui lòng thử lại sau!</div>';
+            }}
         }}
 
         function setReviewFilter(type) {{
@@ -1251,6 +1609,7 @@ def build_html_content(exam_title, quiz_items):
     </script>
 </body>
 </html>'''
+
 
 
 def process_exam_folder(exam_dir, ocr=None):

@@ -37,7 +37,6 @@
             overflow: hidden;
         }
 
-        /* Top Header */
         header.eos-top {
             background: linear-gradient(135deg, var(--eos-navy) 0%, var(--eos-header) 100%);
             color: #ffffff;
@@ -79,7 +78,6 @@
             color: #94a3b8;
         }
 
-        /* Live Stats on Header */
         .header-stats {
             display: flex;
             align-items: center;
@@ -136,6 +134,24 @@
             color: #ffffff;
         }
 
+        .btn-bxh {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: #ffffff;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-bxh:hover {
+            filter: brightness(1.08);
+        }
+
         .btn-reset {
             background: #ef4444;
             border-color: #ef4444;
@@ -146,14 +162,23 @@
             background: #dc2626;
         }
 
-        /* Main 2-column layout */
+        .user-tag {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #e2e8f0;
+            cursor: pointer;
+        }
+
         .eos-layout {
             display: flex;
             flex: 1;
             overflow: hidden;
         }
 
-        /* Left Column */
         .left-col {
             width: 340px;
             background: #ffffff;
@@ -210,7 +235,6 @@
             border: 1px solid #fde68a;
         }
 
-        /* Vertical Checkboxes */
         .checkbox-group {
             display: flex;
             flex-direction: column;
@@ -278,7 +302,6 @@
             font-weight: 500;
         }
 
-        /* Instant Check Feedback States */
         .checkbox-row.correct {
             background: var(--eos-green-light) !important;
             border-color: var(--eos-green) !important;
@@ -303,7 +326,6 @@
             color: #fff !important;
         }
 
-        /* Feedback Alert Banner inside Left Column */
         .feedback-banner {
             display: none;
             padding: 12px 14px;
@@ -338,10 +360,9 @@
             display: block;
             background: #fef3c7;
             color: #b45309;
-            border: 2px solid #f59e0b;
+            border: 2px solid var(--eos-gold);
         }
 
-        /* Primary Action Button (Enter) */
         .btn-enter-action {
             width: 100%;
             padding: 12px 16px;
@@ -414,7 +435,6 @@
             color: var(--eos-navy);
         }
 
-        /* Right Column */
         .right-col {
             flex: 1;
             background: #f8fafc;
@@ -496,6 +516,186 @@
             color: #38bdf8;
             margin-bottom: 6px;
         }
+
+        /* Modals */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(3px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.open {
+            display: flex;
+        }
+
+        .modal-box {
+            background: #ffffff;
+            border-radius: 12px;
+            max-width: 480px;
+            width: 90%;
+            padding: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .name-input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            margin: 14px 0;
+            outline: none;
+        }
+
+        .name-input:focus {
+            border-color: var(--eos-blue);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+
+        .btn-modal {
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-modal-confirm {
+            background: #10b981;
+            color: #ffffff;
+        }
+
+        /* Leaderboard Modal */
+        .modal-leaderboard {
+            background: #ffffff;
+            border-radius: 14px;
+            max-width: 650px;
+            width: 95%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+
+        .bxh-header {
+            background: linear-gradient(135deg, var(--eos-navy) 0%, #1e3a5f 100%);
+            color: #ffffff;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bxh-title {
+            font-size: 17px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bxh-controls {
+            padding: 12px 20px;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--eos-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bxh-filter-pills {
+            display: flex;
+            gap: 6px;
+        }
+
+        .bxh-pill {
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #475569;
+            cursor: pointer;
+        }
+
+        .bxh-pill.active {
+            background: var(--eos-navy);
+            color: #ffffff;
+            border-color: var(--eos-navy);
+        }
+
+        .bxh-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+        }
+
+        .bxh-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .bxh-table th {
+            text-align: left;
+            padding: 8px 10px;
+            font-size: 11px;
+            color: #64748b;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .bxh-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }
+
+        .bxh-row-me {
+            background: #ecfeff !important;
+            font-weight: 700;
+        }
+
+        .rank-badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 13px;
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .rank-badge.top-1 { background: #fef3c7; color: #b45309; font-size: 15px; }
+        .rank-badge.top-2 { background: #f1f5f9; color: #475569; font-size: 14px; }
+        .rank-badge.top-3 { background: #ffedd5; color: #c2410c; font-size: 14px; }
+
+        .score-pill {
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -510,6 +710,9 @@
         </div>
 
         <div class="header-stats">
+            <div class="user-tag" onclick="promptChangeName()" title="Click để đổi tên">
+                <span>👤</span> <span id="studentNameDisplay">Thí sinh</span>
+            </div>
             <div class="stat-pill" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
                 ⏱ Thời gian: <span id="elapsedTimer" style="font-family: monospace; font-size: 14px; font-weight: 800; margin-left: 3px;">00:00</span>
             </div>
@@ -519,6 +722,7 @@
         </div>
 
         <div class="header-actions">
+            <button class="btn-bxh" onclick="openLeaderboard()">🏆 BXH</button>
             <button class="btn-top active" id="btnFilterAll" onclick="setFilterMode('all')">Tất cả (60)</button>
             <button class="btn-top" id="btnFilterWrong" onclick="setFilterMode('wrong')">Câu làm SAI (<span id="wrongCountBtn">0</span>)</button>
             <button class="btn-top" onclick="retryCurrentQuestion()" title="Làm lại câu đang mở">↺ Làm lại câu này</button>
@@ -554,8 +758,8 @@
                 <strong>⌨ Cách dùng siêu tốc:</strong><br>
                 1. Ấn <strong>1, 2, 3, 4</strong> (hoặc <strong>A, B, C, D</strong>) để chọn.<br>
                 2. Ấn <strong>Enter</strong> để kiểm tra:<br>
-                &nbsp;&nbsp;• <span style="color:#16a34a;font-weight:700;">Đúng (Xanh)</span>: Tự động nhảy sang câu kế.<br>
-                &nbsp;&nbsp;• <span style="color:#dc2626;font-weight:700;">Sai (Đỏ)</span>: Hiện đáp án & đối chiếu, ấn <strong>Enter</strong> hoặc <strong>➡</strong> để qua câu tiếp.
+                &nbsp;&nbsp;• <span style="color:#16a34a;font-weight:700;">Đúng</span>: Tự động nhảy sang câu kế.<br>
+                &nbsp;&nbsp;• <span style="color:#dc2626;font-weight:700;">Sai</span>: Hiện đáp án đối chiếu, ấn <strong>Enter</strong> hoặc <strong>➡</strong> để tiếp tục.
             </div>
         </aside>
 
@@ -577,16 +781,93 @@
         </main>
     </div>
 
+    <!-- Name Modal -->
+    <div class="modal-overlay" id="nameModal">
+        <div class="modal-box">
+            <div style="font-size: 32px; margin-bottom: 8px;">🎓</div>
+            <h2>CHÀO MỪNG BẠN ĐẾN VỚI PHÒNG THI</h2>
+            <p style="font-size: 13px; color: #64748b;">Nhập Tên hoặc Nickname để lưu danh vào Bảng Vàng Vinh Danh:</p>
+            <input type="text" class="name-input" id="nameInput" placeholder="Ví dụ: Hoàng Long, Minh DepBo..." maxlength="30" onkeydown="if(event.key==='Enter') saveStudentName()">
+            <div class="modal-actions">
+                <button class="btn-modal btn-modal-confirm" onclick="saveStudentName()" style="width: 100%; padding: 12px;">BẮT ĐẦU LUYỆN TẬP 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div class="modal-overlay" id="bxhModal">
+        <div class="modal-leaderboard">
+            <div class="bxh-header">
+                <div class="bxh-title">
+                    <span>🏆</span> BẢNG VÀNG VINH DANH (LEADERBOARD)
+                </div>
+                <button onclick="closeLeaderboard()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">✕</button>
+            </div>
+
+            <div class="bxh-controls">
+                <div class="bxh-filter-pills">
+                    <button class="bxh-pill active" id="pillCurrentExam" onclick="switchBxhTab('current')">Đề này</button>
+                    <button class="bxh-pill" id="pillAllExams" onclick="switchBxhTab('all')">Tất cả đề</button>
+                </div>
+                <button onclick="loadLeaderboardData()" style="padding: 4px 10px; font-size: 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer;">↺ Làm mới</button>
+            </div>
+
+            <div class="bxh-body" id="bxhBody">
+                <div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const QUESTIONS = [{"id": 1, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q001.png", "full_img": "Q001.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "DUcanhNguen: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 2, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q002.png", "full_img": "Q002.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: a", "DUcanhNguen: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 3, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q003.png", "full_img": "Q003.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "DUcanhNguen: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 4, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q004.png", "full_img": "Q004.png", "comments": ["skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "nguyenhai18052004: dieu chinh hanh vi ca nhan va chinh sach gop phat trien kinh te - xa hoi => chupc nang thuc tién", "DUcanhNguen: a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 5, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q005.png", "full_img": "Q005.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "DUcanhNguen: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 6, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q006.png", "full_img": "Q006.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT 7: A", "nguyenhai18052004: lao dong tripu turong tao ra = gia tri cia hang hoa"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 7, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q007.png", "full_img": "Q007.png", "comments": ["xuanthangmagi: A", "skibidi1231: xa hoi phat trien -> tach biet ve so htu cang sau sac -> hang hoa durgc san xuat ra cang phong phu", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 8, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q008.png", "full_img": "Q008.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: B", "Aim cuc zang cua FPT ↑: B", "phunne123: b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 5."}, {"id": 9, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q009.png", "full_img": "Q009.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c", "phunne123: c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."}, {"id": 10, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q010.png", "full_img": "Q010.png", "comments": ["xuanthangmagi: A", "xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT 7: sp cia nhirng lao dong tu nhan doc lap- k phu thuoc -->hang hoaaaaaa -->A"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 11, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q011.png", "full_img": "Q011.png", "comments": ["xuanthangmagi: b", "skibidi1231: b", "Aim cuc zang cua FPT ↑: b.", "nguyenhai18052004: tien te co 5 chic nang", "phunne123: b"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 12, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q012.png", "full_img": "Q012.png", "comments": ["xuanthangmagi: B", "skibidi1231: lurong hang hoa nhieu hay it, cao hay thap xac dinh bang thoi gian lao dong xa hoi can thiet", "TNDN28: b", "10 diem: B", "khoinguyen2108: B"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 13, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q013.png", "full_img": "Q013.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c", "phunne123: c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."}, {"id": 14, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q014.png", "full_img": "Q014.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT: C. gia ca co the tach roi va xoay quanh gtri cia no", "phunne123: c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."}, {"id": 15, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q015.png", "full_img": "Q015.png", "comments": ["xuanthangmagi: A", "skibidi1231: tien cong co hai hinh thc", "TNDN28: A", "Aim cuc zang cua FPT: a. 2 hinh thipc: theo time va sp", "Tuoc01: tien cong trong chu nghia tur ban co 2 hinh thuc"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."}, {"id": 16, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q016.png", "full_img": "Q016.png", "comments": ["xuanthangmagi: c", "skibidi1231: nhan xet k dung ve san xuat gia tri thang dup tuyet doi -> ngay lao dong k doi", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT: c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."}, {"id": 17, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q017.png", "full_img": "Q017.png", "comments": ["xuanthangmagi: A", "skibidi1231: T-H-T", "TNDN28: A", "Aim cuc zang cua FPT 7: A", "Tuoc01: cong thupc chung cia tu ban T-H-T'"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."}, {"id": 18, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q018.png", "full_img": "Q018.png", "comments": ["xuanthangmagi: B", "skibidi1231: gia tri surc lao dong -> gia tri tup lieu tieu dung de nuoi song nguroi lao dong", "skibidi1231: b", "TNDN28: c", "Kien01102004: tup lieu tieu dung - nuoi nguroi lao dong"], "vote_summary": "B: 2, C: 1", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 2, C: 1."}, {"id": 19, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q019.png", "full_img": "Q019.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT: Vi nha tup ban tra cong theo gia tri surc lao dong, chu khong tra toan bo gia tri ma nguoi lao dong tao ra.", "Aim cuc zang cua FPT: c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."}, {"id": 20, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q020.png", "full_img": "Q020.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT 7: b. xu huong chung cia sx TBCN --> ha thap mirc tien cong", "Tuoc01: san xuat tu ban chi nghia => ha thap mic tien cong"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 21, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q021.png", "full_img": "Q021.png", "comments": ["xuanthangmagi: A", "skibidi1231: tich tu va tap trung deu tang quy mo tup ban ca biet; tich tu lon tup ben trong, tap trung hop luc tip ben ngoai", "Aim cuc zang cua FPT ↑: tich tu va tap trung tu ban - giong nhau --> A. tang quy mo tup ban ca biet", "Tuoc01: tich tu va tap trung tu ban giong nhau o => deu la tang quy mo tup ban ca biet", "phunne123: a"], "vote_summary": "A: 3", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 3."}, {"id": 22, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q022.png", "full_img": "Q022.png", "comments": ["xuanthangmagi: c", "skibidi1231: boc lot gia tri thang du turong doi -> rut ngan thoi gian lao dong tat yeu", "Aim cuc zang cua FPT 7: boc lot gtri thang du turong doi-> rut ngan thoi gian lao dong tat yeu --> C", "Tuoc01: boc lot gia tri thang dup => rut ngan thoi gian lao dong tat yeu", "phunne123: c"], "vote_summary": "C: 3", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 3."}, {"id": 23, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q023.png", "full_img": "Q023.png", "comments": ["xuanthangmagi: c", "TNDN28: kcv", "Kien01102004: kcv", "Aim cuc zang cua FPT 7: chi phi sx TBCN --> gom c va v(k=C+V) --> C", "Tuoc01: kcv"], "vote_summary": "C: 2", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 2."}, {"id": 24, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q024.png", "full_img": "Q024.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 25, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q025.png", "full_img": "Q025.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 26, "type": "multi", "options": ["A", "B", "C", "D"], "correct": ["A", "B", "C"], "question_img": "questions/Q026.png", "full_img": "Q026.png", "comments": ["skibidi1231: abc", "TNDN28: abc", "Aim cuc zang cua FPT ↑: ABC", "phunne123: abc", "Asaki0556: abc"], "vote_summary": "ABC: 5 vote", "explanation": "Đáp án chuẩn: A, B, C. Thống kê thảo luận cộng đồng FuOverflow: ABC: 5 vote."}, {"id": 27, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q027.png", "full_img": "Q027.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: A", "Aim cuc zang cua FPT 7: A. to chipc doc quyen hinh thanh tren co so lien két doc& ngang", "Tuoc01: to chipc doc quyen hinh thanh tren co so => lien ket doc va ngang"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 28, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q028.png", "full_img": "Q028.png", "comments": ["xuanthangmagi: D", "skibidi1231: d", "TNDN28: D", "Aim cuc zang cua FPT ↑: D", "Tuoc01: Cartel"], "vote_summary": "D: 4", "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 4."}, {"id": 29, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q029.png", "full_img": "Q029.png", "comments": ["xuanthangmagi: B", "skibidi1231: quy luat gia tri thang du bieu hien thanh ty suat loi nhuan binh quan", "TNDN28: B", "Aim cuc zang cua FPT: b", "phunne123: b"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 30, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q030.png", "full_img": "Q030.png", "comments": ["in TheJungle: ABC deu dung ma nhi mn oi", "xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT ↑: A"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 31, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q031.png", "full_img": "Q031.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT: su ptr cia tup ban tai chinh---> hinh thanh- cac nha tai phiet -->A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 32, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q032.png", "full_img": "Q032.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT: su ra doi cia TBCN doc quyen nha nuoc --> A. phuc vu loi ich cia to chic doc quyen tup nhan+ cipu nguy cho CNTB", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 33, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q033.png", "full_img": "Q033.png", "comments": ["xuanthangmagi: D", "skibidi1231: D", "TNDN28: D", "Aim cuc zang cua FPT ↑: D", "phunne123: d"], "vote_summary": "D: 5", "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 5."}, {"id": 34, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q034.png", "full_img": "Q034.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 35, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q035.png", "full_img": "Q035.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: B", "Kien01102004: kinh te thi trurong co cung ban chat voi kinh te hang hoa", "Aim cuc zang cua FPT 7: B"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 36, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q036.png", "full_img": "Q036.png", "comments": ["xuanthangmagi: B", "skibidi1231: dé cap -> 6", "TNDN28: B", "Aim cuc zang cua FPT: doi moi- dai hoi dang VI --> B", "Tuoc01: dang cong san viet nam => dai hoi dang VI"], "vote_summary": "B: 3", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 3."}, {"id": 37, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q037.png", "full_img": "Q037.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 38, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q038.png", "full_img": "Q038.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT ↑: A. cong bang phan phoi theo mirc do + chipc nang", "Tuoc01: cong bang theo mic do va cong bang theo chirc nang"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 39, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q039.png", "full_img": "Q039.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT 7: b", "Tuoc01: kinh te thi trurong doi lap voi cac ché do xa hoi"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 40, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q040.png", "full_img": "Q040.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: A", "Aim cuc zang cua FPT: the ché chia thanh 2 tieu chi : cong va tup -->A", "Tuoc01: thé ché cong va the ché tu"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 41, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q041.png", "full_img": "Q041.png", "comments": ["xuanthangmagi: c", "skibidi1231: dan a goc -> 12", "TNDN28: dan la goc => dai hoi dang XIl", "Aim cuc zang cua FPT ↑: c", "Tuoc01: \" dan la goc \" => dai hoi dang XIl"], "vote_summary": "C: 2", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 2."}, {"id": 42, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q042.png", "full_img": "Q042.png", "comments": ["xuanthangmagi: D", "skibidi1231: D", "TNDN28: D", "Aim cuc zang cua FPT ↑: D", "Tuoc01: di vay nha nuoc"], "vote_summary": "D: 4", "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 4."}, {"id": 43, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q043.png", "full_img": "Q043.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c", "Tuoc01: thu 3 => thuong nghiep ra doi"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."}, {"id": 44, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q044.png", "full_img": "Q044.png", "comments": ["xuanthangmagi: B", "TNDN28: b", "Aim cuc zang cua FPT ↑: B", "Tuoc01: xay dung nen kinh te doc lap, tu chu", "phunne123: b"], "vote_summary": "B: 4", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 4."}, {"id": 45, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q045.png", "full_img": "Q045.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT ↑: B", "phunne123: b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 5."}, {"id": 46, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q046.png", "full_img": "Q046.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT ↑: B", "phunne123: b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 5."}, {"id": 47, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q047.png", "full_img": "Q047.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c", "nguyenhai18052004: 18-19"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."}, {"id": 48, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q048.png", "full_img": "Q048.png", "comments": ["xuanthangmagi: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c", "nguyenhai18052004: 2021 - 2030", "phunne123: c"], "vote_summary": "C: 4", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 4."}, {"id": 49, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q049.png", "full_img": "Q049.png", "comments": ["xuanthangmagi: D", "skibidi1231: d", "TNDN28: d", "Aim cuc zang cua FPT 7: D", "nguyenhai18052004: hiep tac don gian - cong trurong thu cong - dai cong nghiep"], "vote_summary": "D: 4", "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 4."}, {"id": 50, "type": "single", "options": ["A", "B", "C", "D"], "correct": "D", "question_img": "questions/Q050.png", "full_img": "Q050.png", "comments": ["xuanthangmagi: D", "skibidi1231: thtp 2 : thu cong tach khoi nong", "TNDN28: d", "Aim cuc zang cua FPT: D", "Tuoc01: thup 2. > thu cong nghiep tach khoi nong nghiep"], "vote_summary": "D: 3", "explanation": "Đáp án chuẩn: D. Thống kê thảo luận cộng đồng FuOverflow: D: 3."}, {"id": 51, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q051.png", "full_img": "Q051.png", "comments": ["xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT ↑: b. thay doi ve chat trong :LLSX", "phunne123: b"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 5."}, {"id": 52, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q052.png", "full_img": "Q052.png", "comments": ["xuanthangmagi: c", "xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."}, {"id": 53, "type": "single", "options": ["A", "B", "C", "D"], "correct": "B", "question_img": "questions/Q053.png", "full_img": "Q053.png", "comments": ["xuanthangmagi: B", "xuanthangmagi: B", "skibidi1231: b", "TNDN28: b", "Aim cuc zang cua FPT ↑: b. lan thp 3: nhting nam 1960 --> B"], "vote_summary": "B: 5", "explanation": "Đáp án chuẩn: B. Thống kê thảo luận cộng đồng FuOverflow: B: 5."}, {"id": 54, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q054.png", "full_img": "Q054.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: a", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 55, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q055.png", "full_img": "Q055.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: a", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 56, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q056.png", "full_img": "Q056.png", "comments": ["xuanthangmagi: A", "skibidi1231: a", "TNDN28: a", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 57, "type": "single", "options": ["A", "B", "C", "D"], "correct": "C", "question_img": "questions/Q057.png", "full_img": "Q057.png", "comments": ["xuanthangmagi: c", "skibidi1231: c", "TNDN28: c", "Aim cuc zang cua FPT ↑: Theo quan diem cia mon Kinh te chinh tri Mac - Lenin, Dang Cong san Viet Nam tro thanh dang cam quyen la do yeu cau va tien trinh lich si khach quan, khong phai do y chi chu quan. Dang cong san VN - dang cam quyen do lich sip khach quan --> C", "phunne123: c"], "vote_summary": "C: 5", "explanation": "Đáp án chuẩn: C. Thống kê thảo luận cộng đồng FuOverflow: C: 5."}, {"id": 58, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q058.png", "full_img": "Q058.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: a", "Aim cuc zang cua FPT ↑: A", "phunne123: a"], "vote_summary": "A: 5", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 5."}, {"id": 59, "type": "single", "options": ["A", "B", "C", "D"], "correct": "A", "question_img": "questions/Q059.png", "full_img": "Q059.png", "comments": ["xuanthangmagi: A", "skibidi1231: A", "TNDN28: a", "Aim cuc zang cua FPT: nhan to anh hurong nang suat lao dong --> A. trinh do kheo leo trung binh cia ng lao dong + muc do ptr KH va trinh do ap dung + su két hop XH + quy mo va hieu xuat + cac dieu kien tur nhien", "Tuquynh0412: AC"], "vote_summary": "A: 4", "explanation": "Đáp án chuẩn: A. Thống kê thảo luận cộng đồng FuOverflow: A: 4."}, {"id": 60, "type": "multi", "options": ["A", "B", "C", "D"], "correct": ["A", "C"], "question_img": "questions/Q060.png", "full_img": "Q060.png", "comments": ["xuanthangmagi: AC", "skibidi1231: deu co 2 thuc them deu co 2 hanh vi doi lap", "TNDN28: ac", "Aim cuc zang cua FPT: AC", "phunne123: ac"], "vote_summary": "AC: 4 vote", "explanation": "Đáp án chuẩn: A, C. Thống kê thảo luận cộng đồng FuOverflow: AC: 4 vote."}];
+        const EXAM_TITLE = "Đề Thi FE MLN122 - SP26 - C1FE";
+        const LEADERBOARD_API = "https://script.google.com/macros/s/AKfycbytIo9ic_IHbV-x1_OELhShgRSXMLnFbu2HoEakLGcUE-y3_Os8RlnUw5QbXbFXuQKsbA/exec";
 
         let currentIndex = 0;
-        let userAnswers = {};     // qid -> "A" or ["A", "B"]
-        let checkedResults = {};  // qid -> { isRight: true/false }
-        let filterMode = 'all';     // 'all' or 'wrong'
+        let userAnswers = {};
+        let checkedResults = {};
+        let filterMode = 'all';
         let autoNextTimer = null;
         let elapsedSeconds = 0;
         let timerInterval = null;
+        let currentStudentName = localStorage.getItem('eos_student_name') || '';
+        let bxhTab = 'current';
+
+        function init() {
+            populateJumpSelect();
+            loadQuestion(0);
+            setupKeyboard();
+            updateHeaderStats();
+            checkStudentName();
+            startTimer();
+        }
+
+        function checkStudentName() {
+            if (currentStudentName) {
+                document.getElementById('studentNameDisplay').innerText = currentStudentName;
+            } else {
+                document.getElementById('nameModal').classList.add('open');
+                setTimeout(() => document.getElementById('nameInput').focus(), 150);
+            }
+        }
+
+        function saveStudentName() {
+            const val = document.getElementById('nameInput').value.trim();
+            if (!val) {
+                alert('Vui lòng nhập tên của bạn nhé!');
+                return;
+            }
+            currentStudentName = val;
+            localStorage.setItem('eos_student_name', val);
+            document.getElementById('studentNameDisplay').innerText = val;
+            document.getElementById('nameModal').classList.remove('open');
+        }
+
+        function promptChangeName() {
+            document.getElementById('nameInput').value = currentStudentName;
+            document.getElementById('nameModal').classList.add('open');
+            setTimeout(() => document.getElementById('nameInput').focus(), 150);
+        }
 
         function startTimer() {
             if (timerInterval) clearInterval(timerInterval);
@@ -602,14 +883,6 @@
             const str = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
             const el = document.getElementById('elapsedTimer');
             if (el) el.innerText = str;
-        }
-
-        function init() {
-            populateJumpSelect();
-            loadQuestion(0);
-            setupKeyboard();
-            updateHeaderStats();
-            startTimer();
         }
 
         function clearAutoTimer() {
@@ -644,7 +917,6 @@
             document.getElementById('statProgress').innerText = (cCount + wCount) + '/' + QUESTIONS.length;
             document.getElementById('wrongCountBtn').innerText = wCount;
 
-            // Update jumpSelect symbols
             const sel = document.getElementById('jumpSelect');
             Array.from(sel.options).forEach((opt, idx) => {
                 const q = QUESTIONS[idx];
@@ -653,6 +925,106 @@
                 if (res) prefix = res.isRight ? '✓ ' : '✕ ';
                 opt.innerText = prefix + 'Câu ' + q.id;
             });
+
+            // Tự động gửi kết quả lên Sheet khi hoàn thành hết các câu
+            if ((cCount + wCount) === QUESTIONS.length && !window.scoreSubmitted) {
+                window.scoreSubmitted = true;
+                const score10 = ((cCount / QUESTIONS.length) * 10).toFixed(1);
+                const spentMin = Math.floor(elapsedSeconds / 60);
+                const spentSec = elapsedSeconds % 60;
+                const timeStr = (spentMin > 0 ? spentMin + ' phút ' : '') + spentSec + ' giây';
+                submitScoreToSheet(score10, cCount + '/' + QUESTIONS.length, timeStr, elapsedSeconds);
+            }
+        }
+
+        function submitScoreToSheet(score, correctStr, timeStr, sec) {
+            const name = currentStudentName || 'Ẩn danh';
+            const payload = {
+                name: name,
+                exam: EXAM_TITLE,
+                score: parseFloat(score),
+                correct: correctStr,
+                duration: timeStr,
+                durationSeconds: sec
+            };
+
+            try {
+                fetch(LEADERBOARD_API, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(payload)
+                });
+            } catch (e) {
+                console.warn('Lỗi gửi điểm:', e);
+            }
+        }
+
+        function openLeaderboard() {
+            document.getElementById('bxhModal').classList.add('open');
+            loadLeaderboardData();
+        }
+
+        function closeLeaderboard() {
+            document.getElementById('bxhModal').classList.remove('open');
+        }
+
+        function switchBxhTab(tab) {
+            bxhTab = tab;
+            document.getElementById('pillCurrentExam').className = 'bxh-pill' + (tab === 'current' ? ' active' : '');
+            document.getElementById('pillAllExams').className = 'bxh-pill' + (tab === 'all' ? ' active' : '');
+            loadLeaderboardData();
+        }
+
+        async function loadLeaderboardData() {
+            const container = document.getElementById('bxhBody');
+            container.innerHTML = '<div style="text-align: center; padding: 30px; color: #64748b;">⏳ Đang tải Bảng Xếp Hạng từ Google Sheets...</div>';
+
+            try {
+                const examParam = (bxhTab === 'current') ? encodeURIComponent(EXAM_TITLE) : '';
+                const url = LEADERBOARD_API + (examParam ? ('?exam=' + examParam) : '');
+                const res = await fetch(url);
+                const list = await res.json();
+
+                if (!list || list.length === 0) {
+                    container.innerHTML = '<div style="text-align: center; padding: 40px; color: #64748b;">Chưa có ai nộp bài cho đề này. Hãy là người đầu tiên lên đỉnh bảng vàng! 🌟</div>';
+                    return;
+                }
+
+                let html = '<table class="bxh-table"><thead><tr>' +
+                    '<th style="width: 50px;">Hạng</th>' +
+                    '<th>Thí sinh</th>' +
+                    (bxhTab === 'all' ? '<th>Đề thi</th>' : '') +
+                    '<th>Điểm số</th>' +
+                    '<th>Thời gian</th>' +
+                    '<th>Ngày nộp</th>' +
+                    '</tr></thead><tbody>';
+
+                list.forEach((item, idx) => {
+                    const rank = idx + 1;
+                    let rankBadge = '<span class="rank-badge">' + rank + '</span>';
+                    if (rank === 1) rankBadge = '<span class="rank-badge top-1">🥇</span>';
+                    else if (rank === 2) rankBadge = '<span class="rank-badge top-2">🥈</span>';
+                    else if (rank === 3) rankBadge = '<span class="rank-badge top-3">🥉</span>';
+
+                    const isMe = (currentStudentName && item.name && item.name.toLowerCase() === currentStudentName.toLowerCase());
+                    const rowClass = isMe ? ' class="bxh-row-me"' : '';
+
+                    html += '<tr' + rowClass + '>' +
+                        '<td>' + rankBadge + '</td>' +
+                        '<td>' + item.name + (isMe ? ' <span style="font-size:10px; color:#0284c7;">(Bạn)</span>' : '') + '</td>' +
+                        (bxhTab === 'all' ? '<td style="font-size:11px; color:#64748b;">' + (item.exam || '') + '</td>' : '') +
+                        '<td><span class="score-pill">' + item.score + ' đ</span></td>' +
+                        '<td>' + (item.duration || '') + '</td>' +
+                        '<td style="font-size: 11px; color: #94a3b8;">' + (item.time || '') + '</td>' +
+                        '</tr>';
+                });
+
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            } catch (err) {
+                container.innerHTML = '<div style="text-align: center; padding: 30px; color: #dc2626;">Lỗi kết nối tới Bảng Xếp Hạng. Vui lòng thử lại sau!</div>';
+            }
         }
 
         function populateJumpSelect() {
@@ -731,7 +1103,6 @@
                 container.appendChild(row);
             });
 
-            // Feedback Banner & Enter Button
             const fb = document.getElementById('feedbackBanner');
             const btnEnter = document.getElementById('btnEnterAction');
             const imgEl = document.getElementById('questionImage');
@@ -773,7 +1144,6 @@
                 btnEnter.innerHTML = '<span>↵</span> KIỂM TRA ĐÁP ÁN (ENTER)';
             }
 
-            // Nav buttons
             const btnPrev = document.getElementById('btnPrev');
             const btnNext = document.getElementById('btnNext');
             const wrongIndices = getWrongIndices();
@@ -819,14 +1189,12 @@
         function handleEnterAction() {
             const q = QUESTIONS[currentIndex];
 
-            // Nếu câu này đã được kiểm tra rồi -> Ấn Enter sẽ nhảy sang câu tiếp theo
             if (checkedResults[q.id]) {
                 clearAutoTimer();
                 navigate(1);
                 return;
             }
 
-            // Kiểm tra xem user đã chọn đáp án chưa
             const uAns = userAnswers[q.id];
             const hasSelection = uAns && (Array.isArray(uAns) ? uAns.length > 0 : true);
             if (!hasSelection) {
@@ -836,7 +1204,6 @@
                 return;
             }
 
-            // Chấm điểm câu hiện tại
             let isRight = false;
             if (q.type === 'multi') {
                 if (Array.isArray(uAns) && Array.isArray(q.correct)) {
@@ -933,6 +1300,7 @@
             elapsedSeconds = 0;
             renderTimer();
             startTimer();
+            window.scoreSubmitted = false;
             document.getElementById('btnFilterAll').className = 'btn-top active';
             document.getElementById('btnFilterWrong').className = 'btn-top';
             updateHeaderStats();
@@ -941,6 +1309,9 @@
 
         function setupKeyboard() {
             window.addEventListener('keydown', (e) => {
+                if (document.getElementById('nameModal').classList.contains('open') ||
+                    document.getElementById('bxhModal').classList.contains('open')) return;
+
                 const q = QUESTIONS[currentIndex];
                 const key = e.key.toUpperCase();
 
